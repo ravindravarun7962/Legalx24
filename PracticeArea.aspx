@@ -3,7 +3,8 @@
     <style>
     .pa-hero {
         background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
-        url('https://images.unsplash.com/photo-1528740561666-dc2479dc08ab');
+        url('img/practice-area.jpg');
+
         background-size: cover;
         background-position: center;
         padding: 100px 0;

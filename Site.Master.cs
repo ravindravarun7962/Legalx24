@@ -14,13 +14,15 @@ namespace Legalx24
             {
                 try
                 {
-                    DataTable dt = Utility._GetDataTable24("Select * from SiteNavigation where Active=1 order by Orderby");
+                     DataTable dt = Utility._GetDataTable24("Select * from SiteNavigation where Site='Legalx24' order by Orderby");
+                   
+
                     if (dt == null || dt.Rows.Count == 0) return;
 
                     StringBuilder dsktp = new StringBuilder();
                     StringBuilder mbl = new StringBuilder();
 
-                    DataRow[] parents = dt.Select("ParentID IS NULL OR ParentID = 0");
+                     DataRow[] parents = dt.Select("ParentID IS NULL OR ParentID = 0");
 
                     foreach (DataRow row in parents)
                     {
@@ -28,7 +30,7 @@ namespace Legalx24
                         string title = row["Title"].ToString().Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"]));//Data Science Training Institute in _#City#_
                         string url = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["HostURL"]) + Convert.ToString(HttpContext.Current.Session["City"]).Replace(" ", "-") + "/" + (row["Navurl"].ToString().Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"]))).Replace(" ", "-");
 
-                        DataRow[] children = dt.Select("ParentID = " + id);
+                         DataRow[] children = dt.Select("ParentID = " + id);
 
                         if (children.Length == 0)
                         {

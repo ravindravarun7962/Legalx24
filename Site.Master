@@ -264,7 +264,7 @@
 
                     <!-- Logo -->
                     <a href="/" class="flex items-center gap-3 font-black text-xl">
-                        <span class="bg-gradient-to-r from-red-500 to-pink-400 px-4 py-1 rounded-lg">Legalx<span class="text-white">24</span>
+                        <span class="bg-gradient-to-r from-red-500 to-pink-400 px-4 py-1 rounded-lg">LEGALX<span class="text-dark">24</span>
                         </span>
                     </a>
 
@@ -302,7 +302,7 @@
                             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Transform Your Future With
                                 <span class="block text-yellow-300">Quality Education</span>
                             </h1>
-                            <p class="text-xl mb-8 text-white/90">Join Legalx24 and master the skills that matter. Expert trainers, hands-on projects, and career support await you.</p>
+                            <p class="text-xl mb-8 text-white/90">Join LEGALX24 and master the skills that matter. Expert trainers, hands-on projects, and career support await you.</p>
                             <div class="flex flex-wrap gap-4">
                                 <a href="/courses" class="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 hover:scale-105 transition-all shadow-lg">Explore Courses
                                 </a>
@@ -325,7 +325,7 @@
                     <h1 class="text-white text-3xl font-bold mb-4 italic">Legalx<span class="text-orange-500">24</span></h1>
                     <p class="text-white/80 font-medium mb-4">Your Trusted Legal Partner</p>
                     <p class="text-sm leading-relaxed">
-                     Legalx24 is committed to providing reliable legal services and expert guidance to help individuals and businesses navigate legal challenges with confidence.                    </p>
+                     LEGALX24 is committed to providing reliable legal services and expert guidance to help individuals and businesses navigate legal challenges with confidence.                    </p>
                     <div class="flex gap-4 mt-6 text-lg">
                         <a href="#" class="hover:text-orange-500 transition"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="hover:text-orange-500 transition"><i class="fab fa-twitter"></i></a>

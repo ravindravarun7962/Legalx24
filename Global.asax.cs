@@ -28,7 +28,7 @@ namespace Legalx24
                 {
                     try
                     {
-                        routes.MapPageRoute(Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])), Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])) + "/{WidgetType}", "~/default.aspx");
+                        routes.MapPageRoute(Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])), Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])) + "/{WidgetType}", "~/Default.aspx");
                     }
                     catch (Exception)
                     {
