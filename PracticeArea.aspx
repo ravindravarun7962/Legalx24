@@ -125,7 +125,7 @@
             <!-- Civil Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/hostel.jpg"  class="img-fluid" alt="Civil Law" />
+                    <img src="img/civil-law.jpg"  class="img-fluid" alt="Civil Law" />
                     <div class="pa-card-body">
                         <h4>Civil Law</h4>
                         <p>
@@ -155,8 +155,7 @@
             <!-- Consumer Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
-                         class="img-fluid" alt="Consumer Law" />
+                       <img src="img/consumer-hero.png"  class="img-fluid" alt="Consumer Law" />
                     <div class="pa-card-body">
                         <h4>Consumer Protection Law</h4>
                         <p>

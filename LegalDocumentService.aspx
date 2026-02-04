@@ -55,6 +55,15 @@
     line-height: 1.9;
 }
 
+.doc-card img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 /* SECTION TITLE */
 .doc-section-title {
     font-weight: 700;
@@ -133,7 +142,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/document-hero.jpg"
+               <img src="img/document-hero.jpg"
                      class="img-fluid rounded-4 shadow doc-img"
                      alt="Legal Documentation Services" />
             </div>
@@ -160,6 +169,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                <img src="img/legal-notice.jpg" alt="Legal Notice" />
                 <h5>Legal Notice Drafting</h5>
                 <p>
                     Drafting of legally sound notices for disputes, recovery matters,
@@ -170,6 +180,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                <img src="img/agreement-drafting.jpg" alt="Agreement Drafting " />
                 <h5>Agreement Drafting</h5>
                 <p>
                     Preparation of customized agreements including service agreements,
@@ -180,6 +191,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                                <img src="img/affidavit.jpg" alt="affidavit" />
                 <h5>Affidavits</h5>
                 <p>
                     Drafting of affidavits for court proceedings, government submissions,
@@ -190,6 +202,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                <img src="img/power-of-attorney.jpg" alt="Power of Attorney" />
                 <h5>Power of Attorney</h5>
                 <p>
                     Drafting of General and Special Power of Attorney documents for property,
@@ -200,6 +213,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                    <img src="img/will-drafting.jpg" alt="Will Drafting" />
                 <h5>Will Drafting</h5>
                 <p>
                     Preparation of legally valid wills to ensure smooth distribution of
@@ -210,6 +224,7 @@
 
         <div class="col-md-4">
             <div class="doc-card">
+                                <img src="img/trust-deed.jpg" alt="Trust Deed" />
                 <h5>Trust & Deed Documentation</h5>
                 <p>
                     Drafting of trust deeds, gift deeds, settlement deeds, and other

@@ -132,7 +132,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/ipr-hero.jpg"
+               <img src="img/ipr-hero.jpg"
                      class="img-fluid rounded-4 shadow ipr-img"
                      alt="Intellectual Property Rights Services" />
             </div>
@@ -159,7 +159,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/trademark.jpg" alt="Trademark Registration" />
+               <img src="img/trademark.png" alt="Trademark Registration" />
                 <h5>Trademark Registration</h5>
                 <p>
                     Registration and protection of trademarks, logos, brand names,
@@ -170,7 +170,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/copyright.jpg" alt="Copyright Registration" />
+                <img src="img/copyright.png" alt="Copyright Registration" />
                 <h5>Copyright Registration</h5>
                 <p>
                     Legal protection for creative works including books, music,
@@ -181,7 +181,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/patent.jpg" alt="Patent Filing" />
+               <img src="img/patent.png" alt="Patent Filing" />
                 <h5>Patent Filing</h5>
                 <p>
                     Filing and prosecution of patent applications to protect inventions,
@@ -192,7 +192,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/design.jpg" alt="Design Registration" />
+               <img src="img/design.jpg" alt="Design Registration" />
                 <h5>Design Registration</h5>
                 <p>
                     Protection of industrial designs including product shape,
@@ -203,7 +203,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/brand-protection.jpg" alt="Brand Protection" />
+              <img src="img/brand-protection.png" alt="Brand Protection" />
                 <h5>Brand Protection</h5>
                 <p>
                     Enforcement actions against trademark infringement,
@@ -214,7 +214,7 @@
 
         <div class="col-md-4">
             <div class="ipr-card">
-                <img src="images/services/ipr-litigation.jpg" alt="IPR Litigation" />
+               <img src="img/ipr-litigation.jpg" alt="IPR Litigation" />
                 <h5>IPR Litigation</h5>
                 <p>
                     Representation in intellectual property disputes before

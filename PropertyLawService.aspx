@@ -62,6 +62,15 @@
     box-shadow: 0 14px 35px rgba(0,0,0,0.08);
     transition: 0.35s;
 }
+.property-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 .property-service h5 {
     font-weight: 600;
     margin-bottom: 12px;
@@ -114,7 +123,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/property-hero.jpg"
+                <img src="img/property-hero.jpg"
                      class="img-fluid rounded-4 shadow property-img"
                      alt="Property & Real Estate Legal Services" />
             </div>
@@ -141,6 +150,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/property-dispute.jpg" alt="Property Dispute Resolution" />
                 <h5>Property Dispute Resolution</h5>
                 <p>
                     Legal representation in property disputes related to ownership, possession, partition,
@@ -151,6 +161,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/sale-deed.jpg" alt="Sale Deed Drafting" />
                 <h5>Sale Deed Drafting</h5>
                 <p>
                     Drafting and registration of sale deeds, conveyance deeds, and transfer documents to
@@ -161,6 +172,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/rent-agreement.jpg" alt="Lease & Rent Agreements" />
                 <h5>Lease & Rent Agreements</h5>
                 <p>
                     Preparation of lease deeds and rent agreements for residential and commercial properties
@@ -171,6 +183,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/property-verification.jpg" alt="Property Title Verification" />
                 <h5>Property Verification</h5>
                 <p>
                     Due diligence and verification of property documents including title search, encumbrance
@@ -181,6 +194,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/builder-buyer.jpg" alt="Builder Buyer Disputes" />
                 <h5>Builder Buyer Disputes</h5>
                 <p>
                     Legal support in disputes between builders and buyers involving possession delay,
@@ -191,6 +205,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/rera.jpg" alt="RERA Matters" />
                 <h5>RERA Matters</h5>
                 <p>
                     Representation before RERA authorities for complaints related to project delays,
@@ -201,6 +216,7 @@
 
         <div class="col-md-6">
             <div class="property-service">
+                <img src="img/land-acquisition.jpg" alt="Land Acquisition" />
                 <h5>Land Acquisition</h5>
                 <p>
                     Legal assistance in land acquisition matters including compensation disputes and

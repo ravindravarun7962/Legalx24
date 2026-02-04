@@ -62,6 +62,15 @@
     transition: 0.35s;
     height: 100%;
 }
+.tax-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 .tax-service h5 {
     font-weight: 600;
     margin-bottom: 10px;
@@ -114,7 +123,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/tax-hero.jpg"
+                <img src="img/tax-hero.jpg"
                      class="img-fluid rounded-4 shadow tax-img"
                      alt="Taxation & Financial Legal Services" />
             </div>
@@ -142,6 +151,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/income-tax.jpg" alt="Income Tax Legal Services" />
                 <h5>Income Tax Matters</h5>
                 <p>
                     Legal representation in income tax assessments, notices, scrutiny,
@@ -152,6 +162,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/gst.jpg" alt="GST Legal Services" />
                 <h5>GST Registration & Returns</h5>
                 <p>
                     End-to-end assistance for GST registration, return filing,
@@ -162,6 +173,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/gst-appeal.jpg" alt="GST Appeals Legal Services" />
                 <h5>GST Appeals</h5>
                 <p>
                     Filing and representation in GST appeals against wrongful demands,
@@ -172,6 +184,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/tax-planning.jpg" alt="Tax Planning Legal Services" />
                 <h5>Tax Planning</h5>
                 <p>
                     Strategic tax planning solutions to optimize tax liabilities
@@ -182,6 +195,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/financial-fraud.jpg" alt="Financial Fraud Legal Services" />
                 <h5>Financial Fraud Cases</h5>
                 <p>
                     Legal assistance in financial fraud, money laundering,
@@ -192,6 +206,7 @@
 
         <div class="col-md-6">
             <div class="tax-service">
+                <img src="img/fema-bemani.jpg" alt="FEMA and Benami Property Legal Services" />
                 <h5>FEMA / Benami Property Cases</h5>
                 <p>
                     Representation in FEMA matters and Benami Property Act cases

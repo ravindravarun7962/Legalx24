@@ -18,6 +18,15 @@
     opacity: 0.9;
 }
 
+.service-box img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 /* ================= INTRO BOX ================= */
 .intro-box {
     background: #ffffff;
@@ -154,6 +163,7 @@
 
         <div class="col">
             <div class="service-box">
+             <img src="img/divorce.jpg" alt="Divorce" />
                 <h5>Divorce (Mutual & Contested)</h5>
                 <p>
                     Legal assistance in mutual consent and contested divorce cases, including filing, documentation,
@@ -163,7 +173,8 @@
         </div>
 
         <div class="col">
-            <div class="service-box">
+            <div class="service-box">  
+                <img src="img/custody.jpg" alt="child custody" />
                 <h5>Child Custody</h5>
                 <p>
                     Representation in child custody and visitation rights matters, keeping the best interest of
@@ -174,6 +185,7 @@
 
         <div class="col">
             <div class="service-box">
+                <img src="img/alimony.jpg" alt="Maintenance and Alimony" />
                 <h5>Maintenance / Alimony</h5>
                 <p>
                     Assistance in claiming or defending maintenance and alimony cases under various personal
@@ -184,6 +196,7 @@
 
         <div class="col">
             <div class="service-box">
+            <img src="img/domestic-violence.jpg" alt="Domestic violence" />
                 <h5>Domestic Violence Cases</h5>
                 <p>
                     Legal support under the Protection of Women from Domestic Violence Act including protection
@@ -194,6 +207,7 @@
 
         <div class="col">
             <div class="service-box">
+                <img src="img/dowry.jpg" alt="Dowry harassment" />
                 <h5>Dowry Harassment</h5>
                 <p>
                     Expert handling of dowry harassment and cruelty cases, ensuring legal protection and
@@ -204,6 +218,7 @@
 
         <div class="col">
             <div class="service-box">
+               <img src="img/marriage.jpg" alt="Marriage registration" />
                 <h5>Marriage Registration</h5>
                 <p>
                     End-to-end assistance for marriage registration under Hindu Marriage Act, Special Marriage
@@ -214,6 +229,7 @@
 
         <div class="col">
             <div class="service-box">
+                   <img src="img/adoption.jpg" alt="Adoption" />
                 <h5>Adoption & Guardianship</h5>
                 <p>
                     Legal guidance for adoption procedures and guardianship cases, ensuring compliance with
@@ -224,6 +240,7 @@
 
         <div class="col">
             <div class="service-box">
+           <img src="img/inheritance.png" alt="Inheritance" />
                 <h5>Succession & Inheritance</h5>
                 <p>
                     Legal assistance in succession certificates, inheritance disputes, and property rights

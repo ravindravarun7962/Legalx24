@@ -32,6 +32,15 @@
     max-height: 330px;
     object-fit: cover;
 }
+.govt-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 
 /* BUTTON */
 .btn-govt {
@@ -133,7 +142,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/government-hero.jpg"
+               <img src="img/government-hero.png"
                      class="img-fluid rounded-4 shadow govt-img"
                      alt="Government & Constitutional Law Services" />
             </div>
@@ -161,6 +170,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/constitutional-law.jpg" alt="Constitutional Law Services" />
                 <h5>Constitutional Law Matters</h5>
                 <p>
                     Representation in constitutional issues including writ petitions,
@@ -172,6 +182,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/administrative-law.jpg" alt="Administrative Law Services" />
                 <h5>Administrative Law</h5>
                 <p>
                     Legal remedies against arbitrary government actions, service matters,
@@ -182,6 +193,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/rti.jpg" alt="RTI Law Services" />
                 <h5>RTI Filing & Appeals</h5>
                 <p>
                     Assistance in drafting RTI applications, first and second appeals,
@@ -192,6 +204,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/election-law.jpg" alt="Election Law Services" />
                 <h5>Election Law</h5>
                 <p>
                     Legal advisory and representation in election-related disputes,
@@ -202,6 +215,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/environmental-law.jpg" alt="Environmental Law Services" />
                 <h5>Environmental Law</h5>
                 <p>
                     Legal action and advisory services in environmental protection,
@@ -212,6 +226,7 @@
 
         <div class="col-md-6">
             <div class="govt-service">
+                <img src="img/human-rights.jpg" alt="Human Rights Law Services" />
                 <h5>Human Rights Cases</h5>
                 <p>
                     Representation in human rights violations involving civil liberties,

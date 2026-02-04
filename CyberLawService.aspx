@@ -140,7 +140,7 @@
                 </a>
             </div>
             <div class="col-md-5 text-center">
-                <img src="images/services/cyber.jpg"
+                <img src="img/cyber.jpg"
                      class="img-fluid rounded-4 shadow corp-img"
                      alt="Cyber & Technology Law Services" />
             </div>
@@ -173,7 +173,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/cyber-crime.jpg" alt="Cyber Crime Complaints" />
+               <img src="img/cyber-crime.jpg" alt="Cyber Crime Complaints" />
                 <h5>Cyber Crime Complaints</h5>
                 <p>
                     Assistance in filing cyber crime complaints related to hacking, identity theft,
@@ -184,7 +184,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/online-fraud.jpg" alt="Online Fraud Cases" />
+               <img src="img/online-fraud.jpg" alt="Online Fraud Cases" />
                 <h5>Online Fraud Cases</h5>
                 <p>
                     Legal support in cases involving online scams, phishing, banking fraud,
@@ -195,7 +195,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/social-media.jpg" alt="Social Media Legal Issues" />
+                <img src="img/social-media.jpg" alt="Social Media Legal Issues" />
                 <h5>Social Media Legal Issues</h5>
                 <p>
                     Handling legal issues related to defamation, fake profiles, online abuse,
@@ -206,7 +206,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/data-protection.jpg" alt="Data Protection & Privacy" />
+               <img src="img/data-protection.jpg" alt="Data Protection & Privacy" />
                 <h5>Data Protection & Privacy</h5>
                 <p>
                     Advisory and compliance services for data protection, privacy policies,
@@ -217,7 +217,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/it-act.jpg" alt="IT Act Compliance" />
+                <img src="img/it-act.jpg" alt="IT Act Compliance" />
                 <h5>IT Act Compliance</h5>
                 <p>
                     Legal guidance on compliance with the Information Technology Act, 2000
@@ -228,7 +228,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/digital-evidence.jpg" alt="Digital Evidence Handling" />
+                <img src="img/digital-evidence.jpg" alt="Digital Evidence Handling" />
                 <h5>Digital Evidence Handling</h5>
                 <p>
                     Assistance in collection, preservation, and presentation of digital evidence
@@ -239,7 +239,7 @@
 
         <div class="col">
             <div class="corp-card">
-                <img src="images/services/ecommerce.jpg" alt="E-Commerce Legal Support" />
+               <img src="img/ecommerce.jpg" alt="E-Commerce Legal Support" />
                 <h5>E-Commerce Legal Support</h5>
                 <p>
                     Legal support for e-commerce businesses covering website policies,

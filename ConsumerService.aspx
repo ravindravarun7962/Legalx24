@@ -52,6 +52,16 @@
     margin-bottom: 30px;
 }
 
+.consumer-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
 /* SERVICE BLOCK */
 .consumer-service {
     background: #ffffff;
@@ -114,7 +124,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/consumer-hero.jpg"
+               <img src="img/consumer-hero.png"
                      class="img-fluid rounded-4 shadow consumer-img"
                      alt="Consumer Protection Services" />
             </div>
@@ -143,7 +153,8 @@
 
         <div class="col-md-6">
             <div class="consumer-service">
-                <h5>Consumer Complaints</h5>
+                    <img src="img/consumer-complaint.jpg" alt="consumer complaint" />
+                    <h5>Consumer Complaints</h5>
                 <p>
                     Drafting and filing consumer complaints for defective goods,
                     deficient services, unfair trade practices, and misleading advertisements.
@@ -153,6 +164,7 @@
 
         <div class="col-md-6">
             <div class="consumer-service">
+               <img src="img/consumer-court.jpg" alt="consumer court" />
                 <h5>Consumer Court Representation</h5>
                 <p>
                     Legal representation before District, State, and National Consumer
@@ -163,6 +175,7 @@
 
         <div class="col-md-6">
             <div class="consumer-service">
+                <img src="img/product-liability.jpg" alt="consumer court" />
                 <h5>Product Liability Cases</h5>
                 <p>
                     Handling claims related to defective or dangerous products causing
@@ -173,6 +186,7 @@
 
         <div class="col-md-6">
             <div class="consumer-service">
+                <img src="img/medical-negligence.jpg" alt="Medical Negligence" />
                 <h5>Medical Negligence</h5>
                 <p>
                     Legal assistance in cases involving medical negligence, incorrect
@@ -183,6 +197,7 @@
 
         <div class="col-md-6">
             <div class="consumer-service">
+                <img src="img/insurance-dispute.jpg" alt="Insurance Dispute" />
                 <h5>Insurance Claim Disputes</h5>
                 <p>
                     Representation in insurance claim disputes related to health,

@@ -52,6 +52,15 @@
     margin-bottom: 30px;
 }
 
+/* SERVICE IMAGE */
+.adr-service img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
 /* SERVICE BLOCK */
 .adr-service {
     background: #ffffff;
@@ -133,7 +142,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/adr-hero.jpg"
+                <img src="img/adr-hero.jpg"
                      class="img-fluid rounded-4 shadow adr-img"
                      alt="Alternative Dispute Resolution Services" />
             </div>
@@ -160,43 +169,51 @@
     <div class="row g-4">
 
         <div class="col-md-6">
-            <div class="adr-service">
-                <h5>Arbitration</h5>
-                <p>
-                    Formal dispute resolution process where an independent arbitrator
-                    hears both parties and delivers a binding decision enforceable by law.
-                </p>
-            </div>
+           <div class="adr-service">
+    <img src="img/arbitration.jpg" alt="Arbitration Services" />
+    <h5>Arbitration</h5>
+    <p>
+        Formal dispute resolution process where an independent arbitrator
+        hears both parties and delivers a binding decision enforceable by law.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="adr-service">
-                <h5>Mediation</h5>
-                <p>
-                    A voluntary and confidential process where a neutral mediator helps
-                    parties reach a mutually acceptable settlement.
-                </p>
-            </div>
+           <div class="adr-service">
+    <img src="img/mediation.jpg" alt="Mediation Services" />
+    <h5>Mediation</h5>
+    <p>
+        A voluntary and confidential process where a neutral mediator helps
+        parties reach a mutually acceptable settlement.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="adr-service">
-                <h5>Conciliation</h5>
-                <p>
-                    A structured negotiation process where a conciliator assists parties
-                    in resolving disputes by proposing settlement terms.
-                </p>
-            </div>
+           <div class="adr-service">
+    <img src="img/conciliation.jpg" alt="Conciliation Services" />
+    <h5>Conciliation</h5>
+    <p>
+        A structured negotiation process where a conciliator assists parties
+        in resolving disputes by proposing settlement terms.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="adr-service">
-                <h5>Negotiation</h5>
-                <p>
-                    Direct negotiation between parties with legal guidance to achieve
-                    fair and enforceable dispute resolution outcomes.
-                </p>
-            </div>
+           <div class="adr-service">
+    <img src="img/negotiation.jpg" alt="Negotiation Services" />
+    <h5>Negotiation</h5>
+    <p>
+        Direct negotiation between parties with legal guidance to achieve
+        fair and enforceable dispute resolution outcomes.
+    </p>
+</div>
+
         </div>
 
     </div>

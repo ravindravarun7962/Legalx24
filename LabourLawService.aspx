@@ -73,6 +73,16 @@
     transform: translateY(-6px);
 }
 
+.labour-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
 /* CTA */
 .labour-cta {
     background: #2c3e50;
@@ -113,7 +123,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/labour-hero.jpg"
+                <img src="img/labour-hero.jpg"
                      class="img-fluid rounded-4 shadow labour-img"
                      alt="Labour & Employment Law Services" />
             </div>
@@ -141,6 +151,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+                <img src="img/labour-dispute.jpg" alt="Labour Dispute" />
                 <h5>Labour Dispute Resolution</h5>
                 <p>
                     Legal representation in labour disputes involving unfair labour practices,
@@ -151,6 +162,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+               <img src="img/employment-termination.jpg" alt="Employment Termination" />
                 <h5>Employment Termination Cases</h5>
                 <p>
                     Advisory and representation in wrongful termination, illegal dismissal,
@@ -161,6 +173,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+              <img src="img/salary-recovery.jpg" alt="Salary recovery" />
                 <h5>Salary Recovery</h5>
                 <p>
                     Assistance in recovery of unpaid salaries, wages, bonuses, and other
@@ -171,6 +184,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+               <img src="img/industrial-dispute.jpg" alt="Industrial Dispute" />
                 <h5>Industrial Disputes</h5>
                 <p>
                     Handling industrial disputes involving strikes, lockouts, collective
@@ -181,6 +195,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+             <img src="img/hr-compliance.jpg" alt="HR Compliance" />
                 <h5>HR Legal Compliance</h5>
                 <p>
                     Legal support for HR departments to ensure compliance with labour laws,
@@ -191,6 +206,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+                  <img src="img/pf-esic.jpg" alt="PF/ESIC " />
                 <h5>PF / ESIC Matters</h5>
                 <p>
                     Representation and advisory services in Provident Fund (PF) and ESIC
@@ -201,6 +217,7 @@
 
         <div class="col-md-6">
             <div class="labour-service">
+                  <img src="img/workmen-compensation.jpg" alt="workmen compensation " />
                 <h5>Workmen Compensation</h5>
                 <p>
                     Legal assistance in workmen compensation claims arising out of workplace

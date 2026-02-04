@@ -32,6 +32,17 @@
     max-height: 340px;
     object-fit: cover;
 }
+/* SERVICE IMAGE - FULL VISIBLE */
+.banking-service img {
+    width: 100%;
+    height: 180px;          /* fixed height */
+    object-fit: contain;    /* 🔥 FULL IMAGE SHOW */
+    background: #f8f9fa;    /* empty space fill */
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
 
 /* INTRO */
 .banking-intro {
@@ -114,7 +125,7 @@
                 </a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="images/services/banking-hero.jpg"
+               <img src="img/banking-hero.jpg"
                      class="img-fluid rounded-4 shadow banking-img"
                      alt="Banking & Finance Legal Services" />
             </div>
@@ -142,53 +153,63 @@
     <div class="row g-4">
 
         <div class="col-md-6">
-            <div class="banking-service">
-                <h5>Loan Recovery Cases</h5>
-                <p>
-                    Legal assistance in loan recovery proceedings for banks and financial
-                    institutions through courts, tribunals, and recovery mechanisms.
-                </p>
-            </div>
+           <div class="banking-service">
+    <img src="img/loan-recovery.jpg" alt="Loan Recovery Cases" />
+    <h5>Loan Recovery Cases</h5>
+    <p>
+        Legal assistance in loan recovery proceedings for banks and financial
+        institutions through courts, tribunals, and recovery mechanisms.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="banking-service">
-                <h5>Cheque Bounce (138 NI Act)</h5>
-                <p>
-                    Representation in cheque dishonour cases under Section 138 of the
-                    Negotiable Instruments Act including notice, filing, and trial.
-                </p>
-            </div>
+          <div class="banking-service">
+    <img src="img/cheque-bounce.jpg" alt="Cheque Bounce Case Lawyer" />
+    <h5>Cheque Bounce (138 NI Act)</h5>
+    <p>
+        Representation in cheque dishonour cases under Section 138 of the
+        Negotiable Instruments Act including notice, filing, and trial.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="banking-service">
-                <h5>DRT & SARFAESI Matters</h5>
-                <p>
-                    Handling cases before Debt Recovery Tribunals (DRT) and proceedings
-                    under the SARFAESI Act for secured asset recovery.
-                </p>
-            </div>
+          <div class="banking-service">
+    <img src="img/drt-sarfaesi.jpg" alt="DRT and SARFAESI Matters" />
+    <h5>DRT & SARFAESI Matters</h5>
+    <p>
+        Handling cases before Debt Recovery Tribunals (DRT) and proceedings
+        under the SARFAESI Act for secured asset recovery.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="banking-service">
-                <h5>Insolvency & Bankruptcy (IBC)</h5>
-                <p>
-                    Legal representation in insolvency and bankruptcy proceedings under
-                    the Insolvency and Bankruptcy Code (IBC) before NCLT and NCLAT.
-                </p>
-            </div>
+           <div class="banking-service">
+    <img src="img/insolvency-ibc.jpg" alt="Insolvency and Bankruptcy Code" />
+    <h5>Insolvency & Bankruptcy (IBC)</h5>
+    <p>
+        Legal representation in insolvency and bankruptcy proceedings under
+        the Insolvency and Bankruptcy Code (IBC) before NCLT and NCLAT.
+    </p>
+</div>
+
         </div>
 
         <div class="col-md-6">
-            <div class="banking-service">
-                <h5>Banking Disputes</h5>
-                <p>
-                    Resolution of disputes involving wrongful debits, loan restructuring,
-                    banking negligence, and contractual conflicts.
-                </p>
-            </div>
+           <div class="banking-service">
+    <img src="img/banking-dispute.jpg" alt="Banking Dispute Resolution" />
+    <h5>Banking Disputes</h5>
+    <p>
+        Resolution of disputes involving wrongful debits, loan restructuring,
+        banking negligence, and contractual conflicts.
+    </p>
+</div>
+
         </div>
 
     </div>
