@@ -40,7 +40,7 @@ namespace Legalx24
                         else
                         {
                             dsktp.AppendFormat("<li class='group relative'><button class='hover:text-orange-400 flex items-center gap-1'>{0} <i class='fas fa-chevron-down text-[10px]'></i></button>", title);
-                            dsktp.Append("<div class='absolute hidden group-hover:block bg-white text-gray-800 shadow-xl rounded-lg p-4 min-w-[200px] top-full left-0'>");
+                            dsktp.Append("<div class='absolute hidden group-hover:block bg-white text-gray-800 shadow-xl rounded-lg p-6 top-full left-1/2 -translate-x-1/2 w-[720px]'>" + "<div class='grid grid-cols-3 gap-6'>");//dropdown 
 
                             mbl.AppendFormat("<li><button type='button' onclick='this.nextElementSibling.classList.toggle(\"hidden\")' class='flex items-center gap-1'>{0} <i class='fas fa-chevron-down text-[10px]'></i></button><div class='hidden ml-4 space-y-2'>", title);
 
@@ -52,7 +52,8 @@ namespace Legalx24
                                 mbl.AppendFormat("<a href='{0}' class='block py-2 hover:text-orange-400'>{1}</a>", url, child["Title"]);
                             }
 
-                            dsktp.Append("</div></li>");
+                            dsktp.Append("</div></div></li>");
+
                             mbl.Append("</div></li>");
                         }
                     }

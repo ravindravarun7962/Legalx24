@@ -41,7 +41,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/criminal.jpg" class="card-img-top" alt="Criminal Lawyer" />
+                <img src="img/criminal-law.jpg" class="card-img-top" alt="Criminal Lawyer" />
                 <div class="card-body text-center">
                     <h6>Criminal Lawyer</h6>
                 </div>
@@ -50,7 +50,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/civil.jpg" class="card-img-top" alt="Civil Lawyer" />
+                <img src="img/civil-law.jpg" class="card-img-top" alt="Civil Lawyer" />
                 <div class="card-body text-center">
                     <h6>Civil Lawyer</h6>
                 </div>
@@ -59,7 +59,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/court.jpg" class="card-img-top" alt="High Court Advocate" />
+                <img src="img/about-legal.jpg" class="card-img-top" alt="High Court Advocate" />
                 <div class="card-body text-center">
                     <h6>High Court Advocate</h6>
                 </div>
@@ -74,7 +74,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/family.jpg" class="card-img-top" alt="Family Lawyer" />
+                <img src="img/family-law.jpg" class="card-img-top" alt="Family Lawyer" />
                 <div class="card-body text-center">
                     <h6>Family Lawyer</h6>
                 </div>
@@ -83,7 +83,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/divorce.jpg" class="card-img-top" alt="Divorce Lawyer" />
+                <img src="img/divorce.jpg" class="card-img-top" alt="Divorce Lawyer" />
                 <div class="card-body text-center">
                     <h6>Divorce Lawyer</h6>
                 </div>
@@ -92,7 +92,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/custody.jpg" class="card-img-top" alt="Child Custody Lawyer" />
+                <img src="img/custody.jpg" class="card-img-top" alt="Child Custody Lawyer" />
                 <div class="card-body text-center">
                     <h6>Child Custody Lawyer</h6>
                 </div>
@@ -107,7 +107,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/corporate.jpg" class="card-img-top" alt="Corporate Lawyer" />
+                <img src="img/corporate.jpg" class="card-img-top" alt="Corporate Lawyer" />
                 <div class="card-body text-center">
                     <h6>Corporate Lawyer</h6>
                 </div>
@@ -116,7 +116,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/startup.jpg" class="card-img-top" alt="Startup Legal Advisor" />
+                <img src="img/startup.jpg" class="card-img-top" alt="Startup Legal Advisor" />
                 <div class="card-body text-center">
                     <h6>Startup Legal Advisor</h6>
                 </div>
@@ -125,7 +125,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/contract.jpg" class="card-img-top" alt="Contract Lawyer" />
+                <img src="img/contract.jpg" class="card-img-top" alt="Contract Lawyer" />
                 <div class="card-body text-center">
                     <h6>Contract Drafting Lawyer</h6>
                 </div>
@@ -140,7 +140,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/cyber.jpg" class="card-img-top" alt="Cyber Law Lawyer" />
+                <img src="img/cyber.jpg" class="card-img-top" alt="Cyber Law Lawyer" />
                 <div class="card-body text-center">
                     <h6>Cyber Law Lawyer</h6>
                 </div>
@@ -149,7 +149,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/fraud.jpg" class="card-img-top" alt="Online Fraud Lawyer" />
+                <img src="img/online-fraud.jpg" class="card-img-top" alt="Online Fraud Lawyer" />
                 <div class="card-body text-center">
                     <h6>Online Fraud Lawyer</h6>
                 </div>
@@ -158,7 +158,7 @@
 
         <div class="col">
             <div class="card h-100 service-card">
-                <img src="images/services/data-protection.jpg" class="card-img-top" alt="Data Protection Lawyer" />
+                <img src="img/data-protection.jpg" class="card-img-top" alt="Data Protection Lawyer" />
                 <div class="card-body text-center">
                     <h6>Data Protection Lawyer</h6>
                 </div>
