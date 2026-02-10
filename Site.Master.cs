@@ -167,8 +167,9 @@ namespace Legalx24
                                 title);
 
                             dsktp.Append(
-                                "<div class='absolute hidden group-hover:block bg-white text-gray-800 shadow-xl rounded-lg p-6 top-full left-1/2 -translate-x-1/2 w-[720px]'>" +
-                                "<div class='grid grid-cols-3 gap-6'>");
+                             "<div class='absolute hidden group-hover:block bg-white text-gray-800 shadow-xl rounded-lg p-6 top-full left-1/2 -translate-x-1/2 w-[720px]'>" + "<div class='grid grid-cols-3'>");
+
+
 
                             mbl.AppendFormat(
                                 "<li><button type='button' onclick='this.nextElementSibling.classList.toggle(\"hidden\")' class='flex items-center gap-1'>{0} <i class='fas fa-chevron-down text-[10px]'></i></button>" +
