@@ -263,10 +263,9 @@
                 <div class="flex items-center h-20 relative">
 
                     <!-- Logo -->
-                    <a href="/" class="flex items-center gap-3 font-black text-xl">
-                        <span class="bg-gradient-to-r from-red-500 to-pink-400 px-4 py-1 rounded-lg">LEGALX<span class="text-dark">24</span>
-                        </span>
-                    </a>
+                  <a href="/" class="flex items-center">
+                  <img src="img/logo.jpg" class="h-14 w-44 md:h-16 md:w-52 object-cover" alt="Legalx24 Logo" />
+                  </a>
 
                     <!-- Desktop Navigation (Always Visible) -->
                     <ul class="flex absolute left-1/2 -translate-x-1/2 items-center gap-10 font-semibold">

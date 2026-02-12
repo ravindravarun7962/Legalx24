@@ -70,9 +70,15 @@
     <Content Include="About.aspx" />
     <Content Include="ADRService.aspx" />
     <Content Include="AllServices.aspx" />
+    <Content Include="Arbitration.aspx" />
+    <Content Include="BankingDispute.aspx" />
     <Content Include="BankingLawService.aspx" />
+    <Content Include="ChequeBounce.aspx" />
+    <Content Include="Conciliation.aspx" />
+    <Content Include="ConsumerCourt.aspx" />
     <Content Include="ConsumerService.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Contracts.aspx" />
     <Content Include="CorporateLawService.aspx" />
     <Content Include="CriminalLawService.aspx" />
     <Content Include="css\allcourses.css" />
@@ -81,8 +87,12 @@
     <Content Include="css\style.css" />
     <Content Include="CyberLawService.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Divorce.aspx" />
+    <Content Include="DRT.aspx" />
     <Content Include="FamilyLawService.aspx" />
+    <Content Include="FIR.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="IBC.aspx" />
     <Content Include="img\about-legal.jpg" />
     <Content Include="img\administrative-law.jpg" />
     <Content Include="img\adoption.jpg" />
@@ -90,6 +100,9 @@
     <Content Include="img\affidavit.jpg" />
     <Content Include="img\agreement-drafting.jpg" />
     <Content Include="img\alimony.jpg" />
+    <Content Include="img\arbitration-1.jpg" />
+    <Content Include="img\arbitration-2.jpg" />
+    <Content Include="img\arbitration-hero.jpg" />
     <Content Include="img\arbitration.jpg" />
     <Content Include="img\Ashish.jpg" />
     <Content Include="img\banking-dispute.jpg" />
@@ -97,15 +110,21 @@
     <Content Include="img\brand-protection.png" />
     <Content Include="img\builder-buyer.jpg" />
     <Content Include="img\business-dispute.jpg" />
+    <Content Include="img\cheque-1.jpg" />
     <Content Include="img\cheque-bounce.jpg" />
+    <Content Include="img\cheque-hero.jpg" />
     <Content Include="img\civil-law.jpg" />
     <Content Include="img\company.jpg" />
     <Content Include="img\compliance.jpg" />
+    <Content Include="img\conciliation-1.jpg" />
+    <Content Include="img\conciliation-hero.jpg" />
     <Content Include="img\conciliation.jpg" />
     <Content Include="img\constitutional-law.jpg" />
     <Content Include="img\consumer-complaint.jpg" />
     <Content Include="img\consumer-court.jpg" />
     <Content Include="img\consumer-hero.png" />
+    <Content Include="img\contract-1.jpg" />
+    <Content Include="img\contract-2.jpg" />
     <Content Include="img\contract.jpg" />
     <Content Include="img\copyright.png" />
     <Content Include="img\corporate-law.jpg" />
@@ -122,6 +141,7 @@
     <Content Include="img\document-hero.jpg" />
     <Content Include="img\domestic-violence.jpg" />
     <Content Include="img\dowry.jpg" />
+    <Content Include="img\drt-hero.jpg" />
     <Content Include="img\drt-sarfaesi.jpg" />
     <Content Include="img\ecommerce.jpg" />
     <Content Include="img\election-law.jpg" />
@@ -131,16 +151,26 @@
     <Content Include="img\family.jpg" />
     <Content Include="img\fema-bemani.jpg" />
     <Content Include="img\financial-fraud.jpg" />
+    <Content Include="img\fir-1.jpg" />
+    <Content Include="img\fir-2.jpg" />
+    <Content Include="img\fir-hero.jpg" />
     <Content Include="img\government-hero.png" />
     <Content Include="img\gst-appeal.jpg" />
     <Content Include="img\gst.jpg" />
     <Content Include="img\hero-law.jpg" />
     <Content Include="img\hr-compliance.jpg" />
     <Content Include="img\human-rights.jpg" />
+    <Content Include="img\ibc-1.jpg" />
+    <Content Include="img\ibc-hero.jpg" />
     <Content Include="img\income-tax.jpg" />
+    <Content Include="img\incorporation-1.jpg" />
+    <Content Include="img\incorporation-2.jpg" />
+    <Content Include="img\incorporation-hero.jpg" />
     <Content Include="img\industrial-dispute.jpg" />
     <Content Include="img\inheritance.png" />
     <Content Include="img\insolvency-ibc.jpg" />
+    <Content Include="img\insurance-1.jpg" />
+    <Content Include="img\insurance-2.jpg" />
     <Content Include="img\insurance-dispute.jpg" />
     <Content Include="img\ipr-hero.jpg" />
     <Content Include="img\ipr-litigation.jpg" />
@@ -150,9 +180,16 @@
     <Content Include="img\land-acquisition.jpg" />
     <Content Include="img\lawyer-team.jpg" />
     <Content Include="img\legal-notice.jpg" />
+    <Content Include="img\loan-1.jpg" />
+    <Content Include="img\loan-hero.jpg" />
     <Content Include="img\loan-recovery.jpg" />
+    <Content Include="img\logo.jpg" />
     <Content Include="img\marriage.jpg" />
+    <Content Include="img\mediation-1.jpg" />
+    <Content Include="img\mediation-hero.jpg" />
     <Content Include="img\mediation.jpg" />
+    <Content Include="img\medical-1.jpg" />
+    <Content Include="img\medical-2.jpg" />
     <Content Include="img\medical-negligence.jpg" />
     <Content Include="img\merger.jpg" />
     <Content Include="img\negotiation.jpg" />
@@ -174,8 +211,11 @@
     <Content Include="img\rti.jpg" />
     <Content Include="img\salary-recovery.jpg" />
     <Content Include="img\sale-deed.jpg" />
+    <Content Include="img\sarfaesi-1.jpg" />
     <Content Include="img\shareholder.jpg" />
     <Content Include="img\social-media.jpg" />
+    <Content Include="img\startup-1.jpg" />
+    <Content Include="img\startup-2.jpg" />
     <Content Include="img\startup.jpg" />
     <Content Include="img\tax-hero.jpg" />
     <Content Include="img\tax-planning.jpg" />
@@ -183,6 +223,8 @@
     <Content Include="img\trust-deed.jpg" />
     <Content Include="img\will-drafting.jpg" />
     <Content Include="img\workmen-compensation.jpg" />
+    <Content Include="Incorporation.aspx" />
+    <Content Include="InsuranceDispute.aspx" />
     <Content Include="IPRService.aspx" />
     <Content Include="js\main.js" />
     <Content Include="LabourLawService.aspx" />
@@ -211,9 +253,13 @@
     <Content Include="lib\waypoints\waypoints.min.js" />
     <Content Include="lib\wow\wow.js" />
     <Content Include="lib\wow\wow.min.js" />
+    <Content Include="LoanRecovery.aspx" />
+    <Content Include="Mediation.aspx" />
+    <Content Include="MedicalNegligence.aspx" />
     <Content Include="PracticeArea.aspx" />
     <Content Include="PropertyLawService.aspx" />
     <Content Include="SpecialGovernmentService.aspx" />
+    <Content Include="Startup.aspx" />
     <Content Include="TaxServices.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -239,12 +285,47 @@
     <Compile Include="AllServices.aspx.designer.cs">
       <DependentUpon>AllServices.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Arbitration.aspx.cs">
+      <DependentUpon>Arbitration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Arbitration.aspx.designer.cs">
+      <DependentUpon>Arbitration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankingDispute.aspx.cs">
+      <DependentUpon>BankingDispute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankingDispute.aspx.designer.cs">
+      <DependentUpon>BankingDispute.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BankingLawService.aspx.cs">
       <DependentUpon>BankingLawService.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BankingLawService.aspx.designer.cs">
       <DependentUpon>BankingLawService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChequeBounce.aspx.cs">
+      <DependentUpon>ChequeBounce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChequeBounce.aspx.designer.cs">
+      <DependentUpon>ChequeBounce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliation.aspx.cs">
+      <DependentUpon>Conciliation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conciliation.aspx.designer.cs">
+      <DependentUpon>Conciliation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumerCourt.aspx.cs">
+      <DependentUpon>ConsumerCourt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsumerCourt.aspx.designer.cs">
+      <DependentUpon>ConsumerCourt.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsumerService.aspx.cs">
       <DependentUpon>ConsumerService.aspx</DependentUpon>
@@ -259,6 +340,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts.aspx.cs">
+      <DependentUpon>Contracts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contracts.aspx.designer.cs">
+      <DependentUpon>Contracts.aspx</DependentUpon>
     </Compile>
     <Compile Include="CorporateLawService.aspx.cs">
       <DependentUpon>CorporateLawService.aspx</DependentUpon>
@@ -288,6 +376,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Divorce.aspx.cs">
+      <DependentUpon>Divorce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Divorce.aspx.designer.cs">
+      <DependentUpon>Divorce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DRT.aspx.cs">
+      <DependentUpon>DRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DRT.aspx.designer.cs">
+      <DependentUpon>DRT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FamilyLawService.aspx.cs">
       <DependentUpon>FamilyLawService.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,8 +397,36 @@
     <Compile Include="FamilyLawService.aspx.designer.cs">
       <DependentUpon>FamilyLawService.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FIR.aspx.cs">
+      <DependentUpon>FIR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FIR.aspx.designer.cs">
+      <DependentUpon>FIR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IBC.aspx.cs">
+      <DependentUpon>IBC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IBC.aspx.designer.cs">
+      <DependentUpon>IBC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Incorporation.aspx.cs">
+      <DependentUpon>Incorporation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Incorporation.aspx.designer.cs">
+      <DependentUpon>Incorporation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceDispute.aspx.cs">
+      <DependentUpon>InsuranceDispute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsuranceDispute.aspx.designer.cs">
+      <DependentUpon>InsuranceDispute.aspx</DependentUpon>
     </Compile>
     <Compile Include="IPRService.aspx.cs">
       <DependentUpon>IPRService.aspx</DependentUpon>
@@ -318,6 +448,27 @@
     </Compile>
     <Compile Include="LegalDocumentService.aspx.designer.cs">
       <DependentUpon>LegalDocumentService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanRecovery.aspx.cs">
+      <DependentUpon>LoanRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanRecovery.aspx.designer.cs">
+      <DependentUpon>LoanRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mediation.aspx.cs">
+      <DependentUpon>Mediation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mediation.aspx.designer.cs">
+      <DependentUpon>Mediation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalNegligence.aspx.cs">
+      <DependentUpon>MedicalNegligence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicalNegligence.aspx.designer.cs">
+      <DependentUpon>MedicalNegligence.aspx</DependentUpon>
     </Compile>
     <Compile Include="PracticeArea.aspx.cs">
       <DependentUpon>PracticeArea.aspx</DependentUpon>
@@ -347,6 +498,13 @@
     </Compile>
     <Compile Include="SpecialGovernmentService.aspx.designer.cs">
       <DependentUpon>SpecialGovernmentService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.aspx.cs">
+      <DependentUpon>Startup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.aspx.designer.cs">
+      <DependentUpon>Startup.aspx</DependentUpon>
     </Compile>
     <Compile Include="TaxServices.aspx.cs">
       <DependentUpon>TaxServices.aspx</DependentUpon>
