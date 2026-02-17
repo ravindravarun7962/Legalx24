@@ -13,5 +13,14 @@ namespace Legalx24
 
     public partial class Default
     {
+
+        /// <summary>
+        /// _LiteralContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal _LiteralContent;
     }
 }

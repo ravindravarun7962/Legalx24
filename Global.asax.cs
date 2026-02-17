@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Routing;
-using System.Web.Security;
-using System.Web.SessionState;
 
 namespace Legalx24
 {
@@ -18,7 +15,6 @@ namespace Legalx24
             ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls;
             RegisterRoutes(RouteTable.Routes);
         }
-
         void RegisterRoutes(RouteCollection routes)
         {
 
@@ -28,7 +24,7 @@ namespace Legalx24
                 {
                     try
                     {
-                        routes.MapPageRoute(Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])), Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])) + "/{WidgetType}", "~/Default.aspx");
+                        routes.MapPageRoute(Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])), Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])) + "/{WidgetType}", "~/default.aspx");
                     }
                     catch (Exception)
                     {

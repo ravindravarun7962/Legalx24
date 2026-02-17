@@ -216,11 +216,6 @@
 </head>
 <body class="font-['Roboto'] bg-slate-50">
     <form id="form1" runat="server">
-        <!-- Spinner -->
-        <div id="spinner" class="show fixed inset-0 bg-white flex items-center justify-center z-[9999]">
-            <div class="w-12 h-12 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
-        </div>
-
         <!-- Top Contact Bar -->
         <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm shadow-md py-3">
             <div class="max-w-7xl mx-auto px-6">
@@ -233,7 +228,7 @@
                             <i class="fas fa-phone-alt"></i>+91 9555580458
                         </a>
                         <a href="mailto:info@success24.in" class="flex items-center gap-2 hover:text-gray-200 transition-colors">
-                            <i class="fas fa-envelope"></i>info@legalx24.in
+                            <i class="fas fa-envelope"></i>info@legalx24.com
                         </a>
                     </div>
                     <div class="flex items-center gap-3">
@@ -272,18 +267,45 @@
                         <asp:Literal ID="_LiteralNavDesktop" runat="server"></asp:Literal>
                     </ul>
 
-                    <!-- Search Box -->
-                   <%-- <div class="ml-auto">
-                        <div class="relative">
-                            <input type="text"
-                                placeholder="Search courses..."
-                                class="w-72 rounded-full bg-white/10 border border-white/20 px-5 py-2 text-sm text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" />
-                            <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-orange-400"></i>
-                        </div>
-                    </div>--%>
+                      <!-- Right Side -->
+                       <div class="flex items-center ml-auto gap-4">
 
-                </div>
-            </div>
+                    <!-- Search (Desktop Only) -->
+                    <div class="hidden md:block relative">
+                      <input type="text"
+                     placeholder="Search..."
+                       class="w-64 rounded-full border border-gray-300 px-5 py-2 text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
+                          <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-orange-400"></i>
+                         </div>
+
+                    <!-- Mobile Toggle -->
+                    <button type="button"
+                   id="mobileMenuButton"
+                  class="md:hidden p-2 rounded hover:bg-gray-100">
+                    <i class="fas fa-bars text-xl"></i>
+                     </button>
+           </div>
+         </div>
+      </div>
+              <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <div class="px-6 py-6 space-y-6">
+
+          <!-- Mobile Search -->
+          <div class="relative">
+              <input type="text"
+                  placeholder="Search..."
+                  class="w-full rounded-full border border-gray-300 px-5 py-2 text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
+              <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-orange-400"></i>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <ul class="flex flex-col gap-4 font-semibold">
+              <asp:Literal ID="_LiteralNavMobile" runat="server"></asp:Literal>
+          </ul>
+
+      </div>
+  </div>
         </nav>
 
 
@@ -346,7 +368,7 @@
                         </p>
                         <p class="flex items-center gap-3">
                             <i class="fa fa-envelope text-orange-500"></i>
-                            info@legalx24.in
+                            info@legalx24.com
                         </p>
                     </div>
                 </div>
@@ -391,6 +413,15 @@
                                     <li><a href="#" class="text-orange-500 hover:underline flex items-center gap-2">Certification Portal</a></li>
                                 </ul>
                             </div>
+                             <!-- Replace the Location tab content area with this markup (keeps fixed height and shows inline horizontal scroll list) -->
+                          <div id="content-location" class="tab-pane hidden text-sm h-full flex flex-col" role="region" aria-labelledby="tab-location">
+
+                                <!-- Horizontal scroll single-line list; stays inside fixed-height tab -->
+                                 <div class="overflow-x-auto whitespace-nowrap py-2">
+                                      <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
+                                      </div>
+
+                                 </div>
 
                             <div id="content-location" class="tab-pane hidden text-sm">
                                 <h4 class="font-bold mb-2 text-orange-500">Corporate Office</h4>
@@ -409,8 +440,7 @@
                                 SEND
                             </button>
                         </div>
-                    </div>
-                </div>
+                    </div>          
 
             </div>
 
@@ -448,6 +478,19 @@
             activeTab.classList.remove('hover:bg-gray-200', 'text-slate-800');
         }
     </script>
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              var btn = document.getElementById("mobileMenuButton");
+              var menu = document.getElementById("mobileMenu");
+
+              if (btn && menu) {
+                  btn.addEventListener("click", function (e) {
+                      e.preventDefault(); // extra safety
+                      menu.classList.toggle("hidden");
+                  });
+              }
+          });
+      </script>
 
     <script src="js/main.js"></script>
 </body>
