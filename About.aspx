@@ -47,167 +47,72 @@
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!-- HERO -->
-<section class="hero-bw">
-    <div class="container">
-        <h1 class="display-5 fw-bold">About Legalx24</h1>
-        <p class="lead mt-3">
-            Trusted Legal Solutions. Anytime. Anywhere.
-        </p>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center bw-title">Who We Are</h2>
-        <div class="bw-divider"></div>
-
-        <div class="row align-items-center">
+   <div class="container">
+         <h1 class="display-5 fw-bold">About Legalx24</h1>
+         <p class="lead mt-3"> Trusted Legal Solutions. Anytime. Anywhere. </p>
+      </div> </section><section class="py-5">
+      <div class="container">
+         <h2 class="text-center bw-title">Who We Are<br/></h2>
+         <div class="bw-divider">
+         </div>
+         <div class="row align-items-center">
             <div class="col-md-6">
-                <p>
-                    <strong>Legalx24</strong> is a comprehensive digital legal services platform
-                    created with the vision of making legal assistance simple, accessible,
-                    and reliable for everyone. We connect individuals, startups, and
-                    businesses with verified and experienced lawyers across multiple
-                    legal domains throughout India.
-                </p>
-                <p>
-                    Legal matters are often complex, time-consuming, and stressful.
-                    At Legalx24, we aim to remove these barriers by combining legal expertise
-                    with modern technology. Our platform allows users to easily access
-                    legal consultations, document services, and end-to-end case handling
-                    without unnecessary delays or confusion.
-                </p>
-                <p>
-                    We act as a bridge between clients and legal professionals,
-                    ensuring that the right legal expert is available at the right time.
-                    Every service on Legalx24 is designed to provide clarity,
-                    transparency, and confidence to clients dealing with legal challenges.
-                </p>
-                <p>
-                    From personal legal issues such as family and property disputes
-                    to complex corporate, banking, and commercial matters,
-                    Legalx24 stands as a reliable legal partner committed to protecting
-                    your rights and interests.
-                </p>
+               <p>
+                  <strong>Legalx24</strong> is an online legal services platform built to make legal help easier to access for individuals, startups, and businesses across India. We connect clients with experienced lawyers from different practice areas, so they can get the right guidance without unnecessary hassle.</p>
+               <p>We understand that dealing with legal issues can feel confusing and stressful. Our aim is to simplify the process by offering consultations, documentation support, and case assistance in a structured and transparent manner.</p>
+               <p>Legalx24 works as a practical link between clients and legal professionals. Instead of searching endlessly for the right lawyer, users can reach qualified experts through a simple and reliable platform designed for clarity and convenience.</p>
+               <p>Whether the matter relates to family disputes, property concerns, business agreements, or complex commercial issues, our focus is to help clients move forward with proper legal support and clear advice.</p>
             </div>
             <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
-                     class="img-fluid rounded shadow bw-img"
-                     alt="Legal Consultation" />
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- IMAGE + CONTENT -->
-<section class="bg-light py-5">
-    <div class="container">
-        <div class="row align-items-center">
+               <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f" class="img-fluid rounded shadow bw-img" alt="Legal Consultation" data-themekey="#"/> &#160; </div>
+         </div>
+      </div> </section><section class="bg-light py-5">
+      <div class="container">
+         <div class="row align-items-center">
             <div class="col-md-6 text-center mb-4">
-                <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20"
-                     class="img-fluid rounded shadow bw-img"
-                     alt="Law Firm Office" />
-            </div>
+               <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20" class="img-fluid rounded shadow bw-img" alt="Law Firm Office" data-themekey="#"/> &#160; </div>
             <div class="col-md-6">
-                <h3 class="fw-bold mb-3">Our Legal Philosophy</h3>
-                <p>
-                    At Legalx24, we strongly believe that justice should not be complicated
-                    or out of reach. Legal awareness and access to the right legal guidance
-                    play a crucial role in protecting individual rights and ensuring
-                    fair outcomes in society.
-                </p>
-                <p>
-                    Our legal philosophy is rooted in integrity, professionalism,
-                    and accountability. We encourage ethical legal practices
-                    and ensure that every case is handled with diligence,
-                    responsibility, and respect for the law.
-                </p>
-                <p>
-                    We focus on delivering practical and result-oriented legal solutions
-                    rather than complicated legal jargon. Our lawyers prioritize
-                    understanding the client’s concerns, explaining legal options clearly,
-                    and guiding them through each step of the legal process.
-                </p>
-                <p>
-                    By maintaining high professional standards and a client-first mindset,
-                    Legalx24 ensures that every client receives consistent,
-                    transparent, and dependable legal support.
-                </p>
+               <h3 class="fw-bold mb-3">Our Legal Philosophy</h3>
+               <p>At Legalx24, we believe that legal guidance should be understandable and accessible. People should feel informed about their rights and options before making decisions that affect their future.</p>
+               <p>Our work is guided by professionalism, ethical conduct, and accountability. Each matter is handled with care, responsibility, and respect for both the client and the legal process.</p>
+               <p>We try to keep things clear and practical. Instead of using complicated legal language, our lawyers focus on understanding the client’s situation, explaining available options in simple terms, and helping them take the next step confidently.</p>
+               <p>By maintaining consistency, transparency, and a client-focused approach, Legalx24 aims to provide dependable legal support that clients can trust whenever they need it.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- CORE VALUES -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center bw-title">Why Legalx24</h2>
-        <div class="bw-divider"></div>
-
-        <div class="row text-center">
+         </div>
+      </div> </section><section class="py-5">
+      <div class="container">
+         <h2 class="text-center bw-title">Why Legalx24</h2>
+         <div class="bw-divider">
+         </div>
+         <div class="row text-center">
             <div class="col-md-3 mb-4">
-                <div class="p-4 bw-card h-100">
-                    <h5>⚖️ Verified & Experienced Lawyers</h5>
-                    <p>
-                        Every lawyer associated with Legalx24 is carefully verified
-                        based on professional background, experience, and specialization.
-                        This ensures that clients receive guidance only from
-                        qualified and trustworthy legal experts.
-                    </p>
-                </div>
+               <div class="p-4 bw-card h-100">
+                  <h5>⚖️ Verified &amp; Experienced Lawyers</h5>
+                  <p>We work with lawyers who have relevant experience and professional credentials in their respective fields, so clients receive reliable legal guidance suited to their matter.</p>
+               </div>
             </div>
             <div class="col-md-3 mb-4">
-                <div class="p-4 bw-card h-100">
-                    <h5>🔒 Strong Confidentiality & Security</h5>
-                    <p>
-                        We understand the sensitive nature of legal matters.
-                        All client information, documents, and communications
-                        are handled with strict confidentiality and secure processes
-                        to maintain privacy and trust.
-                    </p>
-                </div>
+               <div class="p-4 bw-card h-100">
+                  <h5>🔒 Confidential &amp; Secure</h5>
+                  <p>Legal matters are sensitive by nature. Client discussions, documents, and case details are handled with strict confidentiality and responsible data practices.</p>
+               </div>
             </div>
             <div class="col-md-3 mb-4">
-                <div class="p-4 bw-card h-100">
-                    <h5>📞 Easy Access to Legal Help</h5>
-                    <p>
-                        Legalx24 provides quick and convenient access
-                        to legal consultations through online and offline modes.
-                        Our streamlined process saves time and eliminates
-                        unnecessary legal complexities.
-                    </p>
-                </div>
+               <div class="p-4 bw-card h-100">
+                  <h5>📞 Easy Access to Legal Help</h5>
+                  <p>Our platform allows clients to seek legal assistance without complicated procedures. Consultations and support can be arranged quickly, saving time and effort.</p>
+               </div>
             </div>
             <div class="col-md-3 mb-4">
-                <div class="p-4 bw-card h-100">
-                    <h5>🤝 Transparent & Trusted Platform</h5>
-                    <p>
-                        Transparency is at the core of our services.
-                        Clients receive clear information regarding legal procedures,
-                        timelines, and costs, helping them make informed decisions
-                        without hidden surprises.
-                    </p>
-                </div>
+               <div class="p-4 bw-card h-100">
+                  <h5>🤝 Clear &amp; Transparent Process</h5>
+                  <p>We aim to keep clients informed about the legal process, expected timelines, and next steps, helping them make decisions with clarity and confidence.</p>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- QUOTE -->
-<section class="highlight-box py-5">
-    <div class="container text-center">
-        <h3 class="fst-italic fw-light mb-3">
-            “In matters of law, trust matters the most.”
-        </h3>
-        <p class="mb-0">
-            Legalx24 is committed to standing by you with integrity,
-            professionalism, and dedication — offering not just legal advice,
-            but long-term legal support you can rely on.
-        </p>
-    </div>
-</section>
-
-</asp:Content>
+         </div>
+      </div> </section><section class="highlight-box py-5">
+      <div class="container text-center">
+         <h3 class="fst-italic fw-light mb-3"> “In matters of law, trust matters the most.” </h3>
+         <p class="mb-0">At Legalx24, our effort is to provide dependable legal support with professionalism and sincerity — so clients feel guided, informed, and supported throughout their legal journey.</p>
+      </div> </section></asp:Content>
 

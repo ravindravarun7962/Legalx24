@@ -1,397 +1,86 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CriminalLawService.aspx.cs" Inherits="Legalx24.CriminalLawService" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
- /* ===== PAGE HEADING ===== */
-.page-header {
-    background: linear-gradient(135deg, #0f172a, #1f2933);
-    color: #ffffff;
-    padding: 70px 25px;
-    border-radius: 20px;
-    margin-bottom: 70px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
-}
-
-.page-header h1 {
-    font-weight: 800;
-    font-size: 40px;
-    letter-spacing: 0.5px;
-}
-
-.page-header p {
-    font-size: 18px;
-    opacity: 0.9;
-    max-width: 820px;
-    margin: 10px auto 0;
-    line-height: 1.8;
-}
-
-/* ===== INTRO SECTION ===== */
-.intro-box {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-}
-
-.intro-box p {
-    line-height: 1.9;
-    font-size: 16px;
-    color: #444;
-}
-
-/* ===== IMAGE (CRIMINAL LAW) ===== */
-.bw-img {
-    width: 100%;
-    height: 420px;             /* 🔥 balanced hero image */
-    object-fit: cover;
-    border-radius: 22px;
-    filter: grayscale(70%);
-    box-shadow: 0 18px 45px rgba(0,0,0,0.15);
-}
-
-/* ===== SERVICE CARDS ===== */
-.service-box {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 34px;
-    height: 100%;
-    border-left: 6px solid #0f172a;
-    transition: all 0.35s ease;
-    box-shadow: 0 14px 35px rgba(0,0,0,0.08);
-}
-
-.service-box h5 {
-    font-weight: 700;
-    font-size: 17px;
-    margin-bottom: 14px;
-    color: #0f172a;
-}
-
-.service-box p {
-    color: #555;
-    line-height: 1.8;
-    font-size: 15px;
-}
-
-.service-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.14);
-    border-left-color: #000000;
-}
-
-/* ===== SECTION TITLES ===== */
-.section-title {
-    font-weight: 800;
-    font-size: 26px;
-    position: relative;
-    margin-bottom: 40px;
-    color: #0f172a;
-}
-
-.section-title::after {
-    content: "";
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #0f172a, #475569);
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    border-radius: 10px;
-}
-
-/* ===== WHY CHOOSE US ===== */
-.why-box {
-    background: linear-gradient(135deg, #0f172a, #111827);
-    color: #ffffff;
-    padding: 45px;
-    border-radius: 22px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
-}
-
-.why-box ul {
-    padding-left: 18px;
-}
-
-.why-box ul li {
-    margin-bottom: 14px;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* ===== CTA BUTTON FIX ===== */
-.cta-box a {
-    background: #ffffff !important;
-    color: #000000 !important;   /* 🔥 text clear dikhega */
-    font-weight: 700;
-    border-radius: 40px;
-    padding: 15px 44px;
-    font-size: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-.cta-box a:hover {
-    background: #f1f1f1 !important;
-    color: #000000 !important;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-    .page-header h1 {
-        font-size: 34px;
-    }
-    .bw-img {
-        height: 360px;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-header {
-        padding: 50px 25px;
-    }
-
-    .page-header h1 {
-        font-size: 30px;
-    }
-
-    .bw-img {
-        height: 300px;
-        margin-top: 25px;
-    }
-
-    .section-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 576px) {
-    .bw-img {
-        height: 240px;
-    }
-
-    .cta-box {
-        padding: 40px 25px;
-    }
-}
-v
-
-    </style>
-</asp:Content>
+  </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <div class="container py-5">
+   <div class="container mx-auto py-12 px-4">
+      <div class="text-center text-white rounded-2xl mb-16 shadow-2xl px-6 py-16 bg-gradient-to-br from-slate-900 to-gray-800">
+         <h1 class="font-extrabold text-4xl tracking-wide">Criminal Law Services</h1>
+         <p class="text-lg opacity-90 max-w-3xl mx-auto mt-3 leading-8"> Practical legal assistance in criminal matters such as FIR issues, arrest situations, bail applications, trial defence, appeals, and cases involving serious or sensitive allegations. </p>
+         <p class="text-lg opacity-90 max-w-3xl mx-auto mt-3 leading-8"> Our focus is on protecting your legal rights and personal liberty while ensuring that the investigation and trial process remains fair and lawful at every stage. </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 items-center mb-14">
+         <div class="bg-white rounded-2xl p-10 shadow-xl">
+            <p class="text-lg leading-8 text-gray-700"> Criminal law deals with offences that may lead to arrest, prosecution, and punishment such as imprisonment or fine. At 
+               <strong>Legalx24</strong>, we assist clients from the very first stage — whether it is a police complaint, investigation, or court proceedings — ensuring their rights are properly protected throughout the case. </p>
+            <p class="mt-4 leading-8 text-gray-600"> Our criminal lawyers regularly handle urgent and sensitive matters including FIR disputes, arrests, questioning by police, and ongoing criminal trials. Every matter is handled with confidentiality, careful planning, and a clear legal approach suited to the facts of the case. </p>
+            <p class="mt-4 leading-8 text-gray-600"> We understand that criminal proceedings can be stressful and time-sensitive. Our team works promptly to prevent unlawful detention, check procedural lapses, and make sure each client receives a fair opportunity to defend their case under the law. </p>
+         </div>
+         <div class="text-center">
+            <img src="https://legalx24.com/img/criminal-law.jpg" class="w-full h-[420px] md:h-[360px] sm:h-[300px] xs:h-[240px] object-cover rounded-2xl grayscale-[70%] shadow-2xl mt-6 md:mt-0" data-themekey="#" alt=""/> &#160;</div>
+      </div>
+      <h3 class="font-extrabold text-2xl text-slate-900 mb-10 relative after:content-[&#39;&#39;] after:block after:w-20 after:h-1 after:mt-3 after:bg-gradient-to-r after:from-slate-900 after:to-slate-500 after:rounded-full"> Our Criminal Law Services Include </h3>
+      <div class="grid md:grid-cols-2 gap-6">
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Criminal Defense</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Defence representation for individuals accused under the Indian Penal Code or other criminal statutes. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We examine the evidence, review investigation steps, identify procedural lapses, and prepare a defence strategy focused on protecting your rights and ensuring a fair hearing. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">FIR &amp; Police Case Handling</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Assistance in matters relating to FIR registration, police complaints, investigation notices, and questioning by law enforcement authorities. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We also advise and represent clients in situations involving illegal arrest, custodial pressure, or misuse of police powers. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Bail &amp; Anticipatory Bail</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Preparation and filing of regular bail and anticipatory bail applications before appropriate courts including Magistrate, Sessions, and High Courts. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> Our priority is to secure personal liberty at the earliest lawful opportunity while ensuring proper compliance with court procedures. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Criminal Trial Representation</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Representation during trial proceedings before Trial Courts, Sessions Courts, and Special Courts with full case preparation and evidence review. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We focus on effective cross-examination, careful challenge of prosecution evidence, and clear presentation of the defence before the court. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Appeals &amp; Revisions</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Filing and arguing criminal appeals or revisions before higher courts against conviction, sentence, or procedural errors in earlier proceedings. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We review the record carefully to identify legal errors, violations of rights, or grounds for relief. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">NDPS Cases</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Defence representation in matters under the NDPS Act involving narcotics or controlled substances. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We carefully examine compliance with search, seizure, and procedural safeguards which are critical in such cases. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Economic Offences</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Representation in cases involving financial fraud, cheating, breach of trust, or related economic offences. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We assist during investigations by specialised agencies and represent clients before trial courts and appellate forums. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">Cyber Crime Defense</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Defence in cyber-related offences such as online fraud, hacking allegations, identity misuse, or offences under the Information Technology Act. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> Our team reviews technical evidence and digital records carefully, which often play a key role in such matters. </p>
+         </div>
+         <div class="bg-white rounded-2xl p-8 shadow-lg border-l-[6px] border-slate-900 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h5 class="font-bold text-lg mb-3 text-slate-900">White Collar Crimes</h5>
+            <p class="text-gray-600 leading-8 text-[15px]"> Handling complex white-collar criminal matters including corporate fraud, regulatory violations, and financial investigations. </p>
+            <p class="text-gray-600 leading-8 text-[15px] mt-2"> We provide structured defence strategy in high-value matters where legal and commercial consequences can be significant. </p>
+         </div>
+      </div>
+      <div class="bg-gradient-to-br from-slate-900 to-gray-900 text-white p-12 rounded-2xl shadow-2xl mt-14">
+         <h3 class="font-extrabold text-2xl mb-6">Why Choose Legalx24 for Criminal Cases?</h3>
+         <ul class="list-disc pl-5 space-y-3 text-[16px] leading-7">
+            <li>Experienced criminal lawyers handling sensitive matters</li>
+            <li>Prompt response in urgent arrest or bail situations</li>
+            <li>Strict confidentiality and professional conduct</li>
+            <li>Strong courtroom preparation and representation</li>
+            <li>Clear communication and regular case updates</li>
+            <li>Practical, client-focused legal guidance</li>
+         </ul>
+      </div>
+      <div class="text-center mt-14">
+         <p class="mb-4"> If you or your family member is facing criminal proceedings, early legal advice can make a significant difference in protecting your rights. </p>
+         <a class="inline-block bg-white text-black font-bold rounded-full px-12 py-4 text-lg shadow-xl hover:bg-gray-100"> Consult a Criminal Lawyer </a> </div>
+   </div>
 
-<!-- PAGE HEADER -->
-<div class="page-header text-center">
-    <h1>Criminal Law Services</h1>
-    <p>
-        Comprehensive and professional legal assistance in criminal matters
-        including FIR registration, arrest, bail, criminal trials, appeals,
-        and cases involving serious and complex offences.
-    </p>
-    <p>
-        Our criminal law practice focuses on protecting individual liberty,
-        ensuring fair investigation, and providing strong courtroom defense
-        at every stage of the criminal justice process.
-    </p>
-</div>
-
-<!-- INTRO SECTION -->
-<div class="row mb-5 align-items-center">
-    <div class="col-md-6">
-        <div class="intro-box">
-            <p class="lead">
-                Criminal law deals with offences that affect society at large
-                and may result in punishment such as imprisonment, fine, or both.
-                At <strong>Legalx24</strong>, we provide expert criminal law
-                services to safeguard your legal rights from the moment of
-                accusation through investigation, trial, and appeal.
-            </p>
-            <p>
-                Our experienced criminal lawyers handle sensitive and high-risk
-                matters involving police complaints, arrests, custodial
-                interrogation, and criminal litigation with complete
-                confidentiality, professionalism, and strategic planning.
-            </p>
-            <p>
-                We understand the urgency and seriousness of criminal cases.
-                Our legal team works proactively to prevent unlawful detention,
-                challenge procedural lapses, and ensure that every client
-                receives a fair and impartial trial under the law.
-            </p>
-        </div>
-    </div>
-    <div class="col-md-6 text-center">
-        <img src="img/criminal-law.jpg"
-             class="img-fluid rounded shadow bw-img" />
-    </div>
-</div>
-
-<!-- SERVICES LIST -->
-<h3 class="section-title">Our Criminal Law Services Include</h3>
-
-<div class="row row-cols-1 row-cols-md-2 g-4">
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Criminal Defense</h5>
-            <p>
-                We provide strong and strategic criminal defense for individuals
-                accused of offences under the Indian Penal Code (IPC) and other
-                special criminal laws.
-            </p>
-            <p>
-                Our defense strategy focuses on protecting constitutional
-                rights, examining evidence, identifying procedural violations,
-                and ensuring a fair trial before competent courts.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>FIR & Police Case Handling</h5>
-            <p>
-                Legal assistance in FIR registration, police complaints,
-                investigations, notices under criminal procedure, and
-                interrogation by law enforcement authorities.
-            </p>
-            <p>
-                We also provide legal protection against illegal arrest,
-                custodial harassment, and misuse of police powers.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Bail & Anticipatory Bail</h5>
-            <p>
-                Expert legal support for regular bail and anticipatory bail
-                applications before Magistrate Courts, Sessions Courts,
-                and High Courts.
-            </p>
-            <p>
-                Our objective is to secure personal liberty at the earliest
-                possible stage while ensuring compliance with legal procedures.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Criminal Trial Representation</h5>
-            <p>
-                Representation before Trial Courts, Sessions Courts, and
-                Special Courts with comprehensive case preparation,
-                evidence analysis, and effective cross-examination.
-            </p>
-            <p>
-                We ensure that prosecution evidence is thoroughly challenged
-                and defense arguments are presented effectively.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Appeals & Revisions</h5>
-            <p>
-                Filing and arguing criminal appeals and revisions before
-                High Courts and the Supreme Court against wrongful convictions,
-                excessive punishment, or procedural irregularities.
-            </p>
-            <p>
-                Our appellate practice focuses on legal errors, miscarriage
-                of justice, and violation of fundamental rights.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>NDPS Cases</h5>
-            <p>
-                Specialized legal defense in NDPS Act cases involving narcotics,
-                drugs, and psychotropic substances.
-            </p>
-            <p>
-                We ensure strict compliance with mandatory procedural safeguards,
-                search and seizure requirements, and statutory protections
-                provided under the law.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Economic Offences</h5>
-            <p>
-                Legal representation in cases related to financial fraud,
-                cheating, breach of trust, and other economic offences.
-            </p>
-            <p>
-                We handle investigations conducted by special agencies and
-                represent clients before trial courts and appellate forums.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>Cyber Crime Defense</h5>
-            <p>
-                Defense in cyber crime cases involving online fraud, hacking,
-                identity theft, data misuse, and digital offences under the
-                Information Technology Act.
-            </p>
-            <p>
-                Our team understands technical evidence and digital forensics
-                critical to cyber crime litigation.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <h5>White Collar Crimes</h5>
-            <p>
-                Expert handling of complex white collar crime cases including
-                corporate fraud, money laundering, regulatory violations,
-                and economic offences.
-            </p>
-            <p>
-                We provide strategic defense in high-value and high-stakes
-                criminal matters involving corporate and financial issues.
-            </p>
-        </div>
-    </div>
-
-</div>
-
-<!-- WHY CHOOSE US -->
-<div class="why-box mt-5">
-    <h3 class="section-title">Why Choose Legalx24 for Criminal Cases?</h3>
-    <ul>
-        <li>Experienced and dedicated criminal defense lawyers</li>
-        <li>Quick and effective response in urgent arrest and bail matters</li>
-        <li>Strict confidentiality and ethical legal representation</li>
-        <li>Strong courtroom advocacy and trial strategy</li>
-        <li>Transparent legal process and regular case updates</li>
-        <li>Client-focused approach with personalized legal solutions</li>
-    </ul>
-</div>
-
-<!-- CTA -->
-<div class="cta-box text-center mt-5">
-    <p class="mb-3">
-        If you or your loved ones are facing criminal charges, timely legal
-        assistance is crucial to protect your rights and freedom.
-    </p>
-    <a href="Contact.aspx" class="btn btn-light btn-lg">
-        Consult a Criminal Lawyer
-    </a>
-</div>
-
-</div>
 
 </asp:Content>

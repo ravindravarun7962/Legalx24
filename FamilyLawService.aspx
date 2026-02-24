@@ -1,400 +1,107 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FamilyLawService.aspx.cs" Inherits="Legalx24.FamilyLawService" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-  /* ================= PAGE HEADER ================= */
-.page-header {
-    background: linear-gradient(135deg, #0f172a, #1f2937);
-    color: #ffffff;
-    padding: 70px 30px;
-    border-radius: 22px;
-    margin-bottom: 70px;
-    box-shadow: 0 22px 45px rgba(0,0,0,0.30);
-}
-.page-header h1 {
-    font-weight: 800;
-    font-size: 38px;
-    letter-spacing: 0.5px;
-}
-.page-header p {
-    font-size: 18px;
-    opacity: 0.9;
-    max-width: 850px;
-    margin: 10px auto 0;
-    line-height: 1.8;
-}
-
-/* ================= INTRO BOX ================= */
-.intro-box {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 40px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
-}
-.intro-box p {
-    line-height: 1.9;
-    font-size: 16px;
-    color: #444;
-}
-
-/* ================= HERO IMAGE ================= */
-.bw-img {
-    width: 100%;
-    height: 420px;              /* 🔥 image clear & balanced */
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
-}
-
-/* ================= SECTION TITLE ================= */
-.section-title {
-    font-weight: 800;
-    font-size: 26px;
-    margin-bottom: 40px;
-    position: relative;
-    color: #0f172a;
-}
-.section-title::after {
-    content: "";
-    width: 90px;
-    height: 4px;
-    background: linear-gradient(90deg, #0f172a, #475569);
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    border-radius: 10px;
-}
-
-/* ================= SERVICE BOX ================= */
-.service-box {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 32px;
-    height: 100%;
-    border-left: 6px solid #0f172a;
-    transition: all 0.35s ease;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-}
-
-/* SERVICE IMAGE */
-.service-box img {
-    width: 100%;
-    height: 210px;          /* 🔥 uniform card images */
-    object-fit: cover;     /* 🔥 clean professional look */
-    border-radius: 16px;
-    margin-bottom: 18px;
-    background: #f1f5f9;
-}
-
-.service-box h5 {
-    font-weight: 700;
-    margin-bottom: 14px;
-    font-size: 17px;
-    color: #0f172a;
-}
-
-.service-box p {
-    color: #555;
-    line-height: 1.8;
-    font-size: 15px;
-}
-
-.service-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 22px 55px rgba(0,0,0,0.14);
-    border-left-color: #000;
-}
-
-/* ================= WHY CHOOSE US ================= */
-.why-box {
-    background: linear-gradient(135deg, #0f172a, #020617);
-    color: #ffffff;
-    padding: 45px;
-    border-radius: 24px;
-    box-shadow: 0 22px 45px rgba(0,0,0,0.30);
-}
-.why-box ul {
-    padding-left: 18px;
-}
-.why-box ul li {
-    margin-bottom: 14px;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* ================= CTA ================= */
-.cta-box {
-    background: linear-gradient(135deg, #000000, #1f2937);
-    padding: 55px;
-    border-radius: 26px;
-    box-shadow: 0 22px 45px rgba(0,0,0,0.30);
-}
-.cta-box a {
-    padding: 15px 44px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 40px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 992px) {
-    .page-header h1 {
-        font-size: 32px;
-    }
-    .bw-img {
-        height: 360px;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-header {
-        padding: 50px 25px;
-    }
-    .page-header h1 {
-        font-size: 28px;
-    }
-    .bw-img {
-        height: 300px;
-        margin-top: 25px;
-    }
-    .section-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 576px) {
-    .bw-img {
-        height: 240px;
-    }
-    .cta-box {
-        padding: 40px 25px;
-    }
-}
-
-    </style>
+ 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="container py-5">
-
-<!-- PAGE HEADER -->
-<div class="page-header text-center">
-    <h1>Family Law Services</h1>
-    <p>
-        Compassionate, confidential, and result-oriented legal support for
-        family and personal matters involving marriage, children, and
-        interpersonal relationships.
-    </p>
-    <p>
-        Our family law practice is designed to protect emotional well-being
-        while ensuring legal rights are effectively safeguarded.
-    </p>
-</div>
-
-<!-- INTRO SECTION -->
-<div class="row mb-5 align-items-center">
-    <div class="col-md-6">
-        <div class="intro-box">
-            <p class="lead">
-                Family law deals with the most sensitive aspects of personal
-                life including marriage, divorce, children, maintenance,
-                domestic relationships, and inheritance. At
-                <strong>Legalx24</strong>, we understand that family disputes
-                are emotionally challenging and require a balanced approach
-                combining legal expertise with empathy and discretion.
-            </p>
-            <p>
-                Our experienced family lawyers assist clients in resolving
-                disputes related to matrimonial conflicts, child custody,
-                financial support, and family property matters through
-                litigation as well as amicable settlement mechanisms such as
-                mediation and mutual consent proceedings.
-            </p>
-            <p>
-                We prioritize confidentiality, dignity, and timely resolution
-                while ensuring compliance with applicable personal laws and
-                statutory provisions. Our goal is to minimize conflict,
-                protect family relationships wherever possible, and secure
-                long-term legal and emotional stability for our clients.
-            </p>
-        </div>
-    </div>
-
-    <div class="col-md-6 text-center">
-        <img src="img/family-law.jpg"
-             class="img-fluid rounded shadow bw-img"
-             alt="Family Law Services" />
-    </div>
-</div>
-
-<!-- SERVICES SECTION -->
-<h3 class="section-title">Our Family Law Services Include</h3>
-
-<div class="row row-cols-1 row-cols-md-2 g-4">
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/divorce.jpg" alt="Divorce" />
-            <h5>Divorce (Mutual & Contested)</h5>
-            <p>
-                We provide comprehensive legal assistance in both mutual
-                consent and contested divorce cases under various personal
-                laws including Hindu Marriage Act, Special Marriage Act, and
-                other applicable statutes.
-            </p>
-            <p>
-                Our services include drafting divorce petitions, documentation,
-                negotiation of settlement terms, court representation, and
-                post-divorce legal formalities with a focus on minimizing
-                emotional stress and legal delays.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/custody.jpg" alt="Child Custody" />
-            <h5>Child Custody</h5>
-            <p>
-                Child custody matters require careful handling as they directly
-                affect the well-being and future of children involved in family
-                disputes.
-            </p>
-            <p>
-                We represent parents in child custody, visitation rights, and
-                guardianship cases, ensuring that the best interest of the
-                child remains the primary consideration before the court.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/alimony.jpg" alt="Maintenance and Alimony" />
-            <h5>Maintenance / Alimony</h5>
-            <p>
-                Maintenance and alimony issues often arise during separation
-                or divorce proceedings and involve financial support for
-                spouses and children.
-            </p>
-            <p>
-                Our legal team assists clients in claiming, negotiating, or
-                defending maintenance and alimony cases under various personal
-                laws and statutory provisions.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/domestic-violence.jpg" alt="Domestic Violence" />
-            <h5>Domestic Violence Cases</h5>
-            <p>
-                We provide legal support under the Protection of Women from
-                Domestic Violence Act for matters involving physical, emotional,
-                verbal, or economic abuse.
-            </p>
-            <p>
-                Our services include obtaining protection orders, residence
-                rights, monetary relief, and legal representation before
-                Magistrate Courts.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/dowry.jpg" alt="Dowry Harassment" />
-            <h5>Dowry Harassment</h5>
-            <p>
-                Dowry harassment and cruelty cases require immediate legal
-                intervention to protect the rights and safety of affected
-                individuals.
-            </p>
-            <p>
-                We handle dowry-related complaints, criminal proceedings,
-                anticipatory bail, and court representation with sensitivity
-                and legal precision.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/marriage.jpg" alt="Marriage Registration" />
-            <h5>Marriage Registration</h5>
-            <p>
-                Marriage registration is a crucial legal requirement for
-                establishing marital status and securing future legal rights.
-            </p>
-            <p>
-                We provide end-to-end assistance for marriage registration
-                under Hindu Marriage Act, Special Marriage Act, and other
-                applicable laws.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/adoption.jpg" alt="Adoption" />
-            <h5>Adoption & Guardianship</h5>
-            <p>
-                Adoption and guardianship involve strict legal procedures and
-                compliance with statutory requirements.
-            </p>
-            <p>
-                Our lawyers guide clients through adoption processes, court
-                approvals, and guardianship matters while ensuring child
-                welfare and legal compliance.
-            </p>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="service-box">
-            <img src="img/inheritance.png" alt="Inheritance" />
-            <h5>Succession & Inheritance</h5>
-            <p>
-                Succession and inheritance disputes often arise in relation
-                to family property and estate distribution.
-            </p>
-            <p>
-                We assist in succession certificates, legal heirship matters,
-                inheritance disputes, and enforcement of property rights
-                arising from family relationships.
-            </p>
-        </div>
-    </div>
-
-</div>
-
-<!-- WHY CHOOSE US -->
-<div class="why-box mt-5">
-    <h3 class="section-title text-white">
-        Why Choose Legalx24 for Family Law Matters?
-    </h3>
-    <ul>
-        <li>Experienced and dedicated family law specialists</li>
-        <li>Confidential, compassionate, and client-focused legal approach</li>
-        <li>Emphasis on amicable settlement and mediation wherever possible</li>
-        <li>Strong court representation in complex and contested matters</li>
-        <li>Transparent legal process with regular case updates</li>
-        <li>Ethical and responsible handling of sensitive family issues</li>
-    </ul>
-</div>
-
-<!-- CTA -->
-<div class="cta-box text-center mt-5">
-    <p class="mb-3">
-        Family disputes can be emotionally overwhelming. Timely legal guidance
-        can help protect your rights and bring clarity during difficult times.
-    </p>
-    <a href="Contact.aspx" class="btn btn-light btn-lg">
-        Consult a Family Lawyer
-    </a>
-</div>
-
-</div>
+ <div class="container mx-auto py-12 px-4">
+      <div class="bg-gradient-to-br from-[#0f172a] to-[#1f2937] text-white text-center  p-[70px] px-8 rounded-[22px] mb-[70px] shadow-[0_22px_45px_rgba(0,0,0,0.30)]">
+         <h1 class="font-extrabold text-[38px] tracking-[0.5px]"> Family Law Services </h1>
+         <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-3 leading-[1.8]"> Sensitive and practical legal support for personal and family matters involving marriage, children, financial support, and domestic relationships. </p>
+         <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-2 leading-[1.8]"> We handle family cases with discretion and care, while making sure your legal rights remain fully protected. </p>
+      </div>
+      <div class="row mb-5 items-center">
+         <div class="col-md-6">
+            <div class="bg-white rounded-[22px] p-10 shadow-[0_20px_45px_rgba(0,0,0,0.08)]">
+               <p class="text-[16px] leading-[1.9] text-[#444] font-medium"> Family law concerns some of the most personal areas of life — marriage, separation, children, maintenance, and family property. At 
+                  <strong>Legalx24</strong>, we understand that these matters are not only legal disputes but also emotional situations that require patience, confidentiality, and balanced legal advice. </p>
+               <p class="text-[16px] leading-[1.9] text-[#444] mt-3"> Our family lawyers assist in resolving matrimonial conflicts, custody concerns, maintenance claims, and family property issues. Depending on the situation, we guide clients through court proceedings as well as settlement options such as mediation, negotiation, or mutual consent processes. </p>
+               <p class="text-[16px] leading-[1.9] text-[#444] mt-3"> We focus on protecting your dignity, maintaining confidentiality, and moving the matter forward without unnecessary delay. Wherever possible, we try to reduce conflict while ensuring that your legal and financial interests remain secure. </p>
+            </div>
+         </div>
+         <div class="col-md-6 text-center"> 
+            <img src="https://legalx24.com/img/family-law.jpg" class="w-full h-[420px] object-cover rounded-[22px] shadow-[0_18px_45px_rgba(0,0,0,0.18)]" alt="Family Law Services" data-themekey="#"/> &#160; </div>
+      </div>
+      <h3 class="font-extrabold text-[26px] mb-10 text-[#0f172a] relative after:content-[&#39;&#39;] after:block after:w-[90px] after:h-1 after:bg-gradient-to-r after:from-[#0f172a] after:to-[#475569] after:mt-3 after:rounded-full"> Our Family Law Services Include </h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/divorce.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Divorce" data-themekey="#"/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]"> Divorce (Mutual &amp; Contested) </h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Assistance in both mutual consent and contested divorce matters under applicable personal laws such as the Hindu Marriage Act, Special Marriage Act, and other relevant statutes. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We help with petition drafting, documentation, settlement discussions, court representation, and follow-up formalities, aiming to reduce stress and avoid unnecessary procedural delays. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/custody.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Child Custody</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Child custody matters directly affect the welfare and future of the child and therefore require careful legal handling. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We represent parents in custody, visitation, and guardianship proceedings while ensuring the child’s best interests remain central before the court. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/alimony.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Maintenance / Alimony</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Maintenance and alimony issues commonly arise during separation or divorce and relate to financial support for spouse or children. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We assist clients in claiming, negotiating, or defending maintenance proceedings in accordance with applicable personal laws and statutory provisions. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/domestic-violence.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Domestic Violence Cases</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Legal support in matters under the Protection of Women from Domestic Violence Act involving physical, emotional, verbal, or economic abuse. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We assist in seeking protection orders, residence rights, monetary relief, and representation before the appropriate courts. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/dowry.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Dowry Harassment</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Dowry harassment and cruelty allegations often require immediate legal advice to protect safety and rights. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We handle complaints, related criminal proceedings, anticipatory bail matters, and court representation with sensitivity and careful legal preparation. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/marriage.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Marriage Registration</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Assistance with marriage registration to formally establish marital status and secure future legal rights. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We guide clients through documentation, application procedures, and registration under the Hindu Marriage Act, Special Marriage Act, or other applicable laws. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/adoption.jpg" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Adoption &amp; Guardianship</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Adoption and guardianship involve formal legal procedures and court approvals. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We guide families through documentation, compliance requirements, and court processes while keeping the welfare of the child as the primary consideration. </p>
+            </div>
+         </div>
+         <div class="col">
+            <div class="bg-white rounded-[22px] p-8 h-full border-l-[6px] border-[#0f172a] shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(0,0,0,0.14)]"> 
+               <img src="https://legalx24.com/img/inheritance.png" class="w-full h-[210px] object-cover rounded-[16px] mb-4 bg-slate-100" data-themekey="#" alt=""/> 
+               <h5 class="font-bold text-[17px] mb-3 text-[#0f172a]">Succession &amp; Inheritance</h5>
+               <p class="text-[#555] leading-[1.8] text-[15px]"> Assistance in succession certificates, legal heirship matters, and inheritance disputes relating to family property or estate distribution. </p>
+               <p class="text-[#555] leading-[1.8] text-[15px] mt-2"> We also help enforce property rights and resolve succession-related issues arising within families. </p>
+            </div>
+         </div>
+      </div>
+      <div class="mt-12 bg-gradient-to-br from-[#0f172a] to-[#020617] text-white p-11 rounded-[24px] shadow-[0_22px_45px_rgba(0,0,0,0.30)]">
+         <h3 class="font-extrabold text-[26px] mb-6 relative after:content-[&#39;&#39;] after:block after:w-[90px] after:h-1 after:bg-white after:mt-3 after:rounded-full"> Why Choose Legalx24 for Family Law Matters? </h3>
+         <ul class="pl-5">
+            <li class="mb-3 text-[16px] leading-[1.7]">Experienced lawyers handling sensitive family matters</li>
+            <li class="mb-3 text-[16px] leading-[1.7]">Confidential and respectful handling of personal issues</li>
+            <li class="mb-3 text-[16px] leading-[1.7]">Focus on mediation or settlement wherever suitable</li>
+            <li class="mb-3 text-[16px] leading-[1.7]">Strong representation in contested court proceedings</li>
+            <li class="mb-3 text-[16px] leading-[1.7]">Clear communication and regular case updates</li>
+            <li class="text-[16px] leading-[1.7]">Ethical and responsible approach in every case</li>
+         </ul>
+      </div>
+      <div class="mt-12 bg-gradient-to-br from-black to-[#1f2937] text-white text-center p-14 rounded-[26px] shadow-[0_22px_45px_rgba(0,0,0,0.30)]">
+         <p class="mb-4 text-[17px]"> Family disputes can be emotionally difficult. Getting proper legal advice early can help you understand your options and protect your rights. </p> 
+         <a class="inline-block bg-white text-black font-bold text-[18px] px-11 py-[15px] rounded-full shadow-xl hover:bg-gray-100"> Consult a Family Lawyer </a> </div>
+   </div>
 
 </asp:Content>

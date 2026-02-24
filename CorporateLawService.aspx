@@ -1,392 +1,83 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CorporateLawService.aspx.cs" Inherits="Legalx24.CorporateLawService" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-      /* ===== CORPORATE PAGE BASE ===== */
-.corporate-page {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f8fafc;
-}
 
-/* ===== HERO ===== */
-.corporate-hero {
-    background: linear-gradient(135deg, #f5f7fb, #eef2ff);
-    padding: 70px 60px;
-    border-radius: 26px;
-}
-
-.corporate-hero h1 {
-    font-weight: 800;
-    font-size: 38px;
-    color: #1e293b;
-}
-
-.corporate-hero p {
-    font-size: 17px;
-    color: #475569;
-    line-height: 1.8;
-    max-width: 520px;
-}
-
-/* 🔥 HERO IMAGE FIX */
-.corp-img {
-    width: 100%;
-    height: 420px;              /* image proper size */
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
-}
-
-/* ===== ABOUT ===== */
-.corporate-about {
-    background: #ffffff;
-    padding: 40px;
-    border-left: 6px solid #0d6efd;
-    border-radius: 18px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-}
-
-.corporate-about p {
-    font-size: 16px;
-    line-height: 1.9;
-    color: #444;
-}
-
-/* ===== SECTION TITLE ===== */
-.corp-section-title {
-    font-weight: 800;
-    font-size: 26px;
-    margin-top: 60px;
-    margin-bottom: 35px;
-    color: #1e293b;
-    position: relative;
-}
-
-.corp-section-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 70px;
-    height: 4px;
-    background: linear-gradient(90deg, #0d6efd, #60a5fa);
-    border-radius: 10px;
-}
-
-/* ===== SERVICE CARD ===== */
-.corp-card {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 26px;
-    height: 100%;
-    text-align: center;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-    transition: 0.35s ease;
-}
-
-.corp-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-}
-
-/* SERVICE IMAGE */
-.corp-card img {
-    width: 100%;
-    height: 200px;              /* uniform image height */
-    object-fit: cover;
-    border-radius: 16px;
-    margin-bottom: 18px;
-    background: #f1f5f9;
-}
-
-.corp-card h5 {
-    font-weight: 700;
-    font-size: 17px;
-    margin-bottom: 12px;
-    color: #1e293b;
-}
-
-.corp-card p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.7;
-}
-
-/* ===== CTA ===== */
-.corporate-cta {
-    background: linear-gradient(135deg, #0d6efd, #3b82f6);
-    color: #ffffff;
-    padding: 60px;
-    border-radius: 26px;
-}
-
-.corporate-cta h4 {
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.corporate-cta .btn {
-    padding: 14px 36px;
-    border-radius: 40px;
-    font-size: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-    .corporate-hero h1 {
-        font-size: 32px;
-    }
-    .corp-img {
-        height: 360px;
-    }
-}
-
-@media (max-width: 768px) {
-    .corporate-hero {
-        padding: 40px 25px;
-        text-align: center;
-    }
-
-    .corporate-hero p {
-        max-width: 100%;
-    }
-
-    .corp-img {
-        height: 300px;
-        margin-top: 30px;
-    }
-
-    .corp-section-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 576px) {
-    .corp-img {
-        height: 240px;
-    }
-
-    .corporate-cta {
-        padding: 40px 25px;
-    }
-}
-
-
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="container py-5 corporate-page">
-
-<!-- HERO SECTION -->
-<div class="corporate-hero mb-5">
-    <div class="row align-items-center">
-        <div class="col-md-7">
-            <h1>Corporate & Business Legal Services</h1>
-            <p>
-                Comprehensive and end-to-end corporate legal solutions for
-                companies, startups, MSMEs, and growing businesses to ensure
-                legal compliance, sustainable growth, and effective risk
-                management in an evolving regulatory environment.
-            </p>
-            <p>
-                Our corporate legal services are designed to support businesses
-                at every stage — from formation and fundraising to expansion,
-                restructuring, and dispute resolution.
-            </p>
-            <a href="Contact.aspx" class="btn btn-primary mt-3">
-                Talk to a Corporate Lawyer
-            </a>
-        </div>
-        <div class="col-md-5 text-center">
-            <img src="img/corporate.jpg"
-                 class="img-fluid rounded-4 shadow corp-img"
-                 alt="Corporate Legal Services" />
-        </div>
-    </div>
-</div>
-
-<!-- ABOUT SECTION -->
-<div class="row mb-5">
-    <div class="col-md-12">
-        <div class="corporate-about">
-            <p>
-                Corporate and business law governs the legal framework within
-                which companies operate, grow, and engage with stakeholders.
-                It covers a wide range of matters including company formation,
-                governance, compliance, contracts, investments, and dispute
-                resolution.
-            </p>
-            <p>
-                At <strong>Legalx24</strong>, we assist startups, MSMEs, and
-                established enterprises in navigating complex legal and
-                regulatory requirements with confidence and clarity. Our
-                approach combines legal expertise with practical business
-                understanding.
-            </p>
-            <p>
-                Whether you are launching a new venture, raising capital,
-                entering strategic partnerships, or dealing with corporate
-                disputes, our corporate legal experts provide strategic advice
-                aligned with your business objectives.
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- SERVICES GRID -->
-<h3 class="corp-section-title">Our Corporate Legal Services</h3>
-
-<div class="row row-cols-1 row-cols-md-3 g-4">
-
-    <!-- INCORPORATION -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/company.jpg" alt="Company Incorporation" />
-            <h5>Company Incorporation</h5>
-            <p>
-                We provide complete legal assistance for company incorporation
-                including private limited companies, LLPs, OPCs, and partnership
-                firms with end-to-end documentation and regulatory filings.
-            </p>
-            <p>
-                Our services ensure proper structuring, compliance with the
-                Companies Act and LLP Act, and smooth registration with
-                government authorities.
-            </p>
-        </div>
-    </div>
-
-    <!-- STARTUP -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/startup.jpg" alt="Startup Legal Services" />
-            <h5>Startup Legal Services</h5>
-            <p>
-                Tailored legal solutions for startups including entity
-                structuring, founders’ agreements, investor documentation,
-                ESOPs, and regulatory compliance.
-            </p>
-            <p>
-                We support startups through fundraising rounds and help them
-                build a legally strong foundation for scalable growth.
-            </p>
-        </div>
-    </div>
-
-    <!-- CONTRACTS -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/contract.jpg" alt="Contract Drafting & Review" />
-            <h5>Contract Drafting & Review</h5>
-            <p>
-                Drafting, reviewing, and negotiating commercial contracts
-                including vendor agreements, service contracts, NDAs, and
-                employment agreements.
-            </p>
-            <p>
-                Our contract services focus on protecting business interests,
-                minimizing legal risks, and preventing future disputes.
-            </p>
-        </div>
-    </div>
-
-    <!-- COMPLIANCE -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/compliance.jpg" alt="Corporate Compliance" />
-            <h5>Corporate Compliance</h5>
-            <p>
-                Ongoing compliance management under the Companies Act, LLP Act,
-                and other applicable corporate regulations.
-            </p>
-            <p>
-                We help businesses meet statutory deadlines, maintain proper
-                records, and avoid penalties or regulatory actions.
-            </p>
-        </div>
-    </div>
-
-    <!-- M&A -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/merger.jpg" alt="Mergers & Acquisitions" />
-            <h5>Mergers & Acquisitions</h5>
-            <p>
-                Strategic legal support for mergers, acquisitions, joint
-                ventures, and corporate restructuring transactions.
-            </p>
-            <p>
-                Our team handles due diligence, transaction structuring,
-                documentation, and regulatory approvals to ensure smooth
-                execution.
-            </p>
-        </div>
-    </div>
-
-    <!-- SHAREHOLDER -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/shareholder.jpg" alt="Shareholder Agreements" />
-            <h5>Shareholder Agreements</h5>
-            <p>
-                Drafting shareholder and partnership agreements that clearly
-                define rights, obligations, management control, and exit
-                mechanisms.
-            </p>
-            <p>
-                Well-drafted agreements help prevent conflicts and ensure
-                long-term stability of business relationships.
-            </p>
-        </div>
-    </div>
-
-    <!-- DISPUTES -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/business-dispute.jpg" alt="Business Dispute Resolution" />
-            <h5>Business Dispute Resolution</h5>
-            <p>
-                Resolution of commercial, partnership, and contractual disputes
-                through negotiation, mediation, arbitration, or litigation.
-            </p>
-            <p>
-                We focus on timely and cost-effective dispute resolution while
-                safeguarding business continuity.
-            </p>
-        </div>
-    </div>
-
-    <!-- LITIGATION -->
-    <div class="col">
-        <div class="corp-card">
-            <img src="img/corporate-litigation.jpg" alt="Corporate Litigation" />
-            <h5>Corporate Litigation</h5>
-            <p>
-                Representation before commercial courts, tribunals, and
-                appellate forums in complex corporate and business disputes.
-            </p>
-            <p>
-                Our litigation strategy is focused on strong advocacy,
-                procedural compliance, and favorable outcomes.
-            </p>
-        </div>
-    </div>
-
-</div>
-
-<!-- CTA -->
-<div class="corporate-cta mt-5 text-center">
-    <h4>Looking for reliable corporate legal support?</h4>
-    <p class="mt-2">
-        Get expert legal guidance to protect your business, ensure compliance,
-        and support long-term growth with confidence.
-    </p>
-    <a href="Contact.aspx" class="btn btn-dark btn-lg mt-3">
-        Schedule a Consultation
-    </a>
-</div>
-
-</div>
+   <div class="container mx-auto py-12 px-4 bg-slate-50 font-[&#39;Segoe_UI&#39;,Arial,sans-serif]">
+      <div class="bg-gradient-to-br from-slate-100 to-indigo-50 p-10 md:p-14 rounded-[26px] mb-12">
+         <div class="grid md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-7">
+               <h1 class="font-extrabold text-[38px] text-slate-800"> Corporate &amp; Business Legal Services </h1>
+               <p class="mt-3 text-[17px] text-slate-600 leading-8 max-w-[520px]"> We advise companies, startups, and MSMEs on day-to-day corporate legal matters, compliance requirements, and business risks. Our focus is simple — keep your business legally secure while allowing you to grow without unnecessary complications. </p>
+               <p class="mt-3 text-[17px] text-slate-600 leading-8 max-w-[520px]"> From setting up a new entity to handling contracts, investor arrangements, restructuring, or disputes, our lawyers work alongside you to provide practical legal support at every stage. </p>
+               <a class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"> Talk to a Corporate Lawyer </a> </div>
+            <div class="md:col-span-5 text-center">
+               <img src="https://legalx24.com/img/corporate.jpg" class="w-full h-[420px] md:h-[360px] sm:h-[300px] object-cover rounded-[22px] shadow-xl mt-6 md:mt-0" alt="Corporate Legal Services" data-themekey="#"/> &#160;</div>
+         </div>
+      </div>
+      <div class="mb-12">
+         <div class="bg-white p-10 border-l-[6px] border-blue-600 rounded-[18px] shadow-xl">
+            <p class="text-[16px] leading-8 text-gray-700"> Corporate and business law covers the rules that govern how companies are formed, managed, and regulated. It includes incorporation, governance, statutory compliance, commercial agreements, investments, and dispute handling. Proper legal structuring at the right time often prevents serious issues later. </p>
+            <p class="mt-4 text-gray-700 leading-8"> At 
+               <strong>Legalx24</strong>, we regularly work with founders, management teams, and business owners who need clear legal guidance without unnecessary complexity. Our approach is practical and business-oriented — we explain risks, suggest workable options, and help you take legally sound decisions. </p>
+            <p class="mt-4 text-gray-700 leading-8"> Whether you are launching a venture, bringing in investors, entering a commercial arrangement, or dealing with an internal or external dispute, our team provides straightforward legal advice aimed at protecting your organisation and supporting stable growth. </p>
+         </div>
+      </div>
+      <h3 class="font-extrabold text-[26px] text-slate-800 mt-14 mb-10 relative after:content-[&#39;&#39;] after:block after:w-[70px] after:h-1 after:bg-gradient-to-r after:from-blue-600 after:to-blue-400 after:rounded-full after:mt-2"> Our Corporate Legal Services </h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/company.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Company Incorporation" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Company Incorporation</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> We handle incorporation of private limited companies, LLPs, OPCs, and partnership firms, including documentation, filings, and registration formalities. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> Our role is to ensure the structure is legally correct from the start and compliant with applicable company laws and regulations. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/startup.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Startup Legal Services" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Startup Legal Services</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Legal assistance for startups covering structuring, founders’ agreements, investor documents, ESOP planning, and regulatory compliance. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> We help founders put proper legal systems in place early so the business can scale without avoidable legal hurdles later. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/contract.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Contract Drafting &amp; Review" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Contract Drafting &amp; Review</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Drafting and reviewing commercial agreements such as vendor contracts, service agreements, NDAs, and employment terms. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> We focus on clarity in obligations, risk allocation, and enforceability so that agreements actually protect your business if a dispute arises. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/compliance.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Corporate Compliance" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Corporate Compliance</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Assistance with ongoing compliance under company laws and related regulations, including filings, statutory registers, and governance requirements. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> Proper compliance management helps avoid penalties, notices, and unnecessary regulatory complications. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/merger.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Mergers &amp; Acquisitions" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Mergers &amp; Acquisitions</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Legal support for mergers, acquisitions, joint ventures, and restructuring transactions, including due diligence and transaction documentation. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> We work to ensure the transaction is legally sound, properly documented, and completed with necessary approvals. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/shareholder.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Shareholder Agreements" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Shareholder Agreements</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Preparation of shareholder and partnership agreements defining ownership rights, management control, voting powers, and exit terms. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> Clear agreements reduce the chances of internal disputes and help maintain long-term business stability. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/business-dispute.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Business Dispute Resolution" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Business Dispute Resolution</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Handling commercial and partnership disputes through negotiation, mediation, arbitration, or court proceedings where required. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> We aim to resolve disputes efficiently while protecting the continuity and reputation of your business. </p>
+         </div>
+         <div class="bg-white rounded-[22px] p-6 text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition">
+            <img src="https://legalx24.com/img/corporate-litigation.jpg" class="w-full h-[200px] object-cover rounded-[16px] mb-4 bg-slate-100" alt="Corporate Litigation" data-themekey="#"/>
+            <h5 class="font-bold text-slate-800 mb-2">Corporate Litigation</h5>
+            <p class="text-gray-600 leading-7 text-[15px]"> Representation before commercial courts, tribunals, and appellate forums in corporate and business disputes. </p>
+            <p class="text-gray-600 leading-7 text-[15px] mt-2"> Our litigation approach focuses on preparation, procedural accuracy, and strong representation to protect your legal and commercial interests. </p>
+         </div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-12 rounded-[26px] mt-14 text-center">
+         <h4 class="font-bold text-[26px]"> Looking for reliable corporate legal support? </h4>
+         <p class="mt-3"> Speak with our team to discuss your business requirements and understand the legal steps needed to keep your organisation protected and compliant. </p>
+         <a class="inline-block mt-4 bg-slate-900 hover:bg-black text-white px-8 py-3 rounded-full shadow-xl"> Schedule a Consultation </a> </div>
+   </div>
 
 </asp:Content>

@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using System.Configuration;
 
 namespace Legalx24
 {
@@ -341,57 +342,54 @@ namespace Legalx24
                 }
             }
         }
-        public static void _SetLocationsHome(System.Web.UI.WebControls.Literal _LiteralColl1, System.Web.UI.WebControls.Literal _LiteralColl2, String _Page, String _PageName)
+        public static void _SetLocationsHome(
+     System.Web.UI.WebControls.Literal _LiteralColl1,
+     System.Web.UI.WebControls.Literal _LiteralColl2,
+     String _Page,
+     String _PageName)
         {
             Page page = HttpContext.Current.Handler as Page;
-            //if (!String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["Key"])))
+
+            Boolean _IsState = false;
+            DataTable _DataTable;
+
+            if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["State"]) == "1")
             {
-                // String[] _Spliter = { "-In-" };
-                // _PageName = "SharePoint";
-                Boolean _IsState = false;
-                DataTable _DataTable;
-                if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["State"]).Equals("1"))
-                    if (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])))
-                    {
-                        _DataTable = new DataTable();// DbUtility._GetState();
-                        _IsState = true;
-                    }
-                    else
-                    {
-                        _DataTable = _GetLocation();
-                    }
-                else
-                    _DataTable = _GetLocation();
-                for (int _Counter = 0; _Counter < _DataTable.Rows.Count; _Counter++)
+                if (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])))
                 {
-
-                    _LiteralColl1.Text += "<p><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + _GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "/" + _Page.Replace(" ", "-") + "-In-" + _GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "' title='" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></p>";
-                    // _Counter = _Counter + 1;
-                    //if (_Counter < _DataTable.Rows.Count)
-                    // {
-                    //    _LiteralColl2.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "' title='" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></li>";
-                    // _Counter = _Counter + 1;
-                    //}
-                    // if (_Counter < _DataTable.Rows.Count)
-                    //     _LiteralColl3.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])) ? "" : "/" + Convert.ToString(page.RouteData.Values["State"])) + (_IsState ? "/" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) : "") + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></li>";
+                    _DataTable = new DataTable();
+                    _IsState = true;
                 }
-                //Convert.ToString(page.RouteData.Values["Key"]).Split(_Spliter, StringSplitOptions.None)[0]; //+ "-In-_#City#_";
-                // DbUtility._GetData("Select ID, Title from Cities where IsActive=1 AND Country=" + System.Configuration.ConfigurationManager.AppSettings["Country"]);
-                //for (int _Counter = 0; _Counter < _DataTable.Rows.Count; _Counter++)
-                //{
-
-                //    _LiteralColl1.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])) ? "" : "/" + Convert.ToString(page.RouteData.Values["State"])) + (_IsState ? "/" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) : "") + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></li>";
-                //    _Counter = _Counter + 1;
-                //    if (_Counter < _DataTable.Rows.Count)
-                //    {
-                //        _LiteralColl2.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])) ? "" : "/" + Convert.ToString(page.RouteData.Values["State"])) + (_IsState ? "/" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) : "") + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></li>";
-                //       // _Counter = _Counter + 1;
-                //    }
-                //   // if (_Counter < _DataTable.Rows.Count)
-                //   //     _LiteralColl3.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])) ? "" : "/" + Convert.ToString(page.RouteData.Values["State"])) + (_IsState ? "/" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) : "") + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"])) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "</a></li>";
-                //}
-
+                else
+                {
+                    _DataTable = _GetLocation();
+                }
             }
+            else
+                _DataTable = _GetLocation();
+
+            string host = System.Configuration.ConfigurationManager.AppSettings["HostURL"];
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < _DataTable.Rows.Count; i++)
+            {
+                string city = Convert.ToString(_DataTable.Rows[i]["DisplayName"]);
+                string citySlug = _GetFormatedURL(city);
+
+                string url = host + citySlug + "/" +
+                             _Page.Replace(" ", "-") + "-In-" + citySlug;
+
+                string title = _PageName.Replace("-", " ") + " in " + city;
+
+                // 🔥 INLINE CHIP STYLE (NO <p>, NO <br>)
+                sb.Append("<a href='" + url + "' title='" + title + @"'
+class='inline-block bg-gray-100 hover:bg-orange-500 hover:text-white 
+px-3 py-1 rounded-full text-xs whitespace-nowrap transition mr-2 mb-2'>
+" + title + "</a>");
+            }
+
+            _LiteralColl1.Text = sb.ToString();
         }
 
         public static String _GetCityNameCamlecase(String _Val)

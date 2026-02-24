@@ -209,6 +209,13 @@
             background-color: #ea580c;
             color: white;
         }
+        #content-location .overflow-y-auto::-webkit-scrollbar{
+    width:6px;
+}
+#content-location .overflow-y-auto::-webkit-scrollbar-thumb{
+    background:#f97316;
+    border-radius:10px;
+}
     </style>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -227,7 +234,7 @@
                         <a href="tel:+919555580458" class="flex items-center gap-2 hover:text-gray-200 transition-colors">
                             <i class="fas fa-phone-alt"></i>+91 9555580458
                         </a>
-                        <a href="mailto:info@success24.in" class="flex items-center gap-2 hover:text-gray-200 transition-colors">
+                        <a href="mailto:info@legalx24.com" class="flex items-center gap-2 hover:text-gray-200 transition-colors">
                             <i class="fas fa-envelope"></i>info@legalx24.com
                         </a>
                     </div>
@@ -259,11 +266,11 @@
 
                     <!-- Logo -->
                   <a href="/" class="flex items-center">
-                  <img src="img/logo.jpg" class="h-14 w-44 md:h-16 md:w-52 object-cover" alt="Legalx24 Logo" />
+                  <img src="https://legalx24.com/img/logo.jpg" class="h-14 w-44 md:h-16 md:w-52 object-cover" alt="Legalx24 Logo" />
                   </a>
 
                     <!-- Desktop Navigation (Always Visible) -->
-                    <ul class="flex absolute left-1/2 -translate-x-1/2 items-center gap-10 font-semibold">
+                    <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 font-semibold">
                         <asp:Literal ID="_LiteralNavDesktop" runat="server"></asp:Literal>
                     </ul>
 
@@ -279,16 +286,14 @@
                          </div>
 
                     <!-- Mobile Toggle -->
-                    <button type="button"
-                   id="mobileMenuButton"
-                  class="md:hidden p-2 rounded hover:bg-gray-100">
+                    <button type="button"id="mobileMenuButton"class="md:hidden p-2 rounded text-white hover:bg-white/10">
                     <i class="fas fa-bars text-xl"></i>
                      </button>
            </div>
          </div>
       </div>
               <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
       <div class="px-6 py-6 space-y-6">
 
           <!-- Mobile Search -->
@@ -332,7 +337,7 @@
                             </div>
                         </div>
                         <div class="scroll-fade-right">
-                            <img src="img/bg.jpg" alt="Students Learning" class="rounded-2xl shadow-2xl hover-lift" />
+                            <img src="https://legalx24.com/img/bg.jpg" alt="Students Learning" class="rounded-2xl shadow-2xl hover-lift" />
                         </div>
                     </div>
                 </div>
@@ -399,7 +404,7 @@
                                         <h4 class="text-lg font-bold text-slate-800">Ashish Bhardwaj</h4>
                                         <p class="text-gray-500 italic text-xs">Greater London, UK</p>
                                     </div>
-                                    <img src="img/Ashish.jpg" alt="User" class="w-10 h-10 rounded-full shadow-sm">
+                                    <img src="https://legalx24.com/img/Ashish.jpg" alt="User" class="w-10 h-10 rounded-full shadow-sm">
                                 </div>
                                 <p class="text-gray-600 text-sm leading-snug mb-3">
                                     SharePoint Development Training Conducted very well. Instructor has good command on course.
@@ -413,21 +418,16 @@
                                     <li><a href="#" class="text-orange-500 hover:underline flex items-center gap-2">Certification Portal</a></li>
                                 </ul>
                             </div>
-                             <!-- Replace the Location tab content area with this markup (keeps fixed height and shows inline horizontal scroll list) -->
-                          <div id="content-location" class="tab-pane hidden text-sm h-full flex flex-col" role="region" aria-labelledby="tab-location">
+                          <div id="content-location" class="tab-pane hidden text-sm">
 
-                                <!-- Horizontal scroll single-line list; stays inside fixed-height tab -->
-                                 <div class="overflow-x-auto whitespace-nowrap py-2">
-                                      <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
-                                      </div>
+                  <!-- SCROLL BOX -->
+                 <div class="max-h-[220px] overflow-y-auto pr-2">
+               <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
+              </div>
 
-                                 </div>
+         </div>
 
-                            <div id="content-location" class="tab-pane hidden text-sm">
-                                <h4 class="font-bold mb-2 text-orange-500">Corporate Office</h4>
-                                <p class="text-gray-600">D1/338, New Kondli, Delhi – 110096</p>
-                                <p class="mt-2 text-gray-500 italic text-xs">Timing: 9:00 AM - 7:00 PM</p>
-                            </div>
+                          
                         </div>
                     </div>
 
@@ -443,7 +443,7 @@
                     </div>          
 
             </div>
-
+</div>
             <div class="border-t border-slate-800 bg-slate-950 text-center py-4 text-sm text-gray-400">
                 © 2026 Legalx24 | Designed By Botex AI Private Limited
             </div>

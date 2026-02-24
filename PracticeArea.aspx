@@ -6,7 +6,7 @@
 <style>
     .pa-hero {
         background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
-                    url('img/practice-area.jpg');
+                    url('https://legalx24.com/img/practice-area.jpg');
         background-size: cover;
         background-position: center;
         padding: 110px 0;
@@ -110,7 +110,7 @@
             <!-- Criminal Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/criminal-law.jpg" alt="Criminal Law" />
+                    <img src="https://legalx24.com/img/criminal-law.jpg" alt="Criminal Law" />
                     <div class="pa-card-body">
                         <h4>Criminal Law</h4>
                         <p>
@@ -128,7 +128,7 @@
             <!-- Family Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/family-law.jpg" alt="Family Law" />
+                    <img src="https://legalx24.com/img/family-law.jpg" alt="Family Law" />
                     <div class="pa-card-body">
                         <h4>Family Law</h4>
                         <p>
@@ -146,7 +146,7 @@
             <!-- Corporate Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/corporate-law.jpg" alt="Corporate Law" />
+                    <img src="https://legalx24.com/img/corporate-law.jpg" alt="Corporate Law" />
                     <div class="pa-card-body">
                         <h4>Corporate Law</h4>
                         <p>
@@ -164,7 +164,7 @@
             <!-- Civil Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/civil-law.jpg" alt="Civil Law" />
+                    <img src="https://legalx24.com/img/civil-law.jpg" alt="Civil Law" />
                     <div class="pa-card-body">
                         <h4>Civil Law</h4>
                         <p>
@@ -182,7 +182,7 @@
             <!-- Property Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/property-law.jpg" alt="Property Law" />
+                    <img src="https://legalx24.com/img/property-law.jpg" alt="Property Law" />
                     <div class="pa-card-body">
                         <h4>Property & Real Estate Law</h4>
                         <p>
@@ -200,7 +200,7 @@
             <!-- Consumer Law -->
             <div class="col-md-4 mb-4">
                 <div class="pa-card h-100">
-                    <img src="img/consumer-hero.png" alt="Consumer Law" />
+                    <img src="https://legalx24.com/img/consumer-hero.png" alt="Consumer Law" />
                     <div class="pa-card-body">
                         <h4>Consumer Protection Law</h4>
                         <p>
