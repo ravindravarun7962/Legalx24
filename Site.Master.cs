@@ -221,15 +221,34 @@ namespace Legalx24
 
                         dsktp.Append("</div></div></div></li>");
 
-                        // mobile: parent with children (vertical)
-                        mobileSb.AppendFormat("<li class='border-b pb-2 mb-2'><div class='font-medium py-2'>{0}</div><ul class='pl-3'>", HttpUtility.HtmlEncode(title));
+                        // mobile: parent with children accordion
+                        mobileSb.Append("<li class='border-b'>");
+
+                        // parent heading (ALWAYS visible)
+                        mobileSb.AppendFormat(@"
+<button type='button'
+onclick=""this.nextElementSibling.classList.toggle('hidden')""
+class='w-full text-left py-3 font-semibold text-gray-800 flex justify-between items-center'>
+<span>{0}</span>
+<i class='fas fa-chevron-down text-xs'></i>
+</button>",
+                        HttpUtility.HtmlEncode(title));
+
+                        // children list (hidden by default)
+                        mobileSb.Append("<ul class='hidden pl-3 pb-2'>");
+
                         foreach (DataRow child in children)
                         {
                             string childNav = Convert.ToString(child["Navurl"] ?? "");
                             string childTitle = Convert.ToString(child["Title"] ?? "").Replace("_#City#_", city);
                             string childUrl = BuildUrl(childNav, includeCity: isProgramsParent);
-                            mobileSb.AppendFormat("<li><a href='{0}' class='block py-2 px-3 text-sm text-gray-700 hover:text-orange-500'>{1}</a></li>", HttpUtility.HtmlAttributeEncode(childUrl), HttpUtility.HtmlEncode(childTitle));
+
+                            mobileSb.AppendFormat(
+                                "<li><a href='{0}' class='block py-1 px-2 text-sm text-gray-700 hover:text-orange-500'>{1}</a></li>",
+                                HttpUtility.HtmlAttributeEncode(childUrl),
+                                HttpUtility.HtmlEncode(childTitle));
                         }
+
                         mobileSb.Append("</ul></li>");
                     }
                 }
@@ -247,3 +266,4 @@ namespace Legalx24
         }
     }
 }
+
