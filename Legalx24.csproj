@@ -179,10 +179,10 @@
     <Content Include="img\land-acquisition.jpg" />
     <Content Include="img\lawyer-team.jpg" />
     <Content Include="img\legal-notice.jpg" />
+    <Content Include="img\legallogo.png" />
     <Content Include="img\loan-1.jpg" />
     <Content Include="img\loan-hero.jpg" />
     <Content Include="img\loan-recovery.jpg" />
-    <Content Include="img\logo.jpg" />
     <Content Include="img\marriage.jpg" />
     <Content Include="img\mediation-1.jpg" />
     <Content Include="img\mediation-hero.jpg" />
@@ -216,7 +216,6 @@
     <Content Include="img\startup-1.jpg" />
     <Content Include="img\startup-2.jpg" />
     <Content Include="img\startup.jpg" />
-    <Content Include="img\tax-hero.jpg" />
     <Content Include="img\tax-planning.jpg" />
     <Content Include="img\trademark.png" />
     <Content Include="img\trust-deed.jpg" />

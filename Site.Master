@@ -265,10 +265,11 @@
                 <div class="flex items-center h-20 relative">
 
                     <!-- Logo -->
-                  <a href="/" class="flex items-center">
-                  <img src="https://legalx24.com/img/logo.jpg" class="h-14 w-44 md:h-16 md:w-52 object-cover" alt="Legalx24 Logo" />
-                  </a>
-
+   <a href="/">
+    <img src="https://legalx24.com/img/legallogo.png"
+         class="h-8 md:h-10 w-auto object-contain"
+         alt="Legalx24 Logo">
+</a>
                     <!-- Desktop Navigation (Always Visible) -->
                     <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 font-semibold">
                         <asp:Literal ID="_LiteralNavDesktop" runat="server"></asp:Literal>
@@ -421,8 +422,9 @@
                           <div id="content-location" class="tab-pane hidden text-sm">
 
                   <!-- SCROLL BOX -->
-                 <div class="max-h-[220px] overflow-y-auto pr-2">
+                 <div class="max-h-[100px] overflow-y-auto pr-2 text-base">
                <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
+
               </div>
 
          </div>

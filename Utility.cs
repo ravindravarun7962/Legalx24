@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
@@ -134,12 +131,8 @@ namespace Legalx24
             Page page = HttpContext.Current.Handler as Page;
             DataTable _DataTable = new DataTable();//IsActive=1 AND
             SqlDataAdapter _DataAdapter;
-            // if (String.IsNullOrEmpty(Convert.ToString(page.RouteData.Values["State"])))
             _DataAdapter = new SqlDataAdapter("Select   ID, Title, displayname, isactive from City where isactive=1 AND CountryCode IN (" + System.Configuration.ConfigurationManager.AppSettings["Country"] + ")", System.Configuration.ConfigurationManager.ConnectionStrings["Locationlive"].ConnectionString);
-            // _DataAdapter = new SqlDataAdapter("Select   ID, Title, displayname, isactive from City where CountryCode IN (" + System.Configuration.ConfigurationManager.AppSettings["Country"] + ")", System.Configuration.ConfigurationManager.ConnectionStrings["Locationlive"].ConnectionString);
-            // else
-            //    _DataAdapter = new SqlDataAdapter("Select   ID, Title, displayname, isactive from City where isactive=1 AND State='" + Convert.ToString(page.RouteData.Values["State"]) + "' AND CountryCode='" + System.Configuration.ConfigurationManager.AppSettings["Country"] + "'", System.Configuration.ConfigurationManager.ConnectionStrings["Locationlive"].ConnectionString);
-            _DataAdapter.Fill(_DataTable);
+             _DataAdapter.Fill(_DataTable);
             return _DataTable;
         }
         public static string _GetFormatedURL(String _Val)
@@ -148,7 +141,7 @@ namespace Legalx24
         }
         public static String _GetMainContentText(String _PageId, System.Web.UI.WebControls.Literal _Literal, System.Web.UI.WebControls.Literal _LiteralHeader, System.Web.UI.WebControls.DataList _DataList)
         {
-            Int16 _Counter = 0;
+           
             System.Text.StringBuilder _ContentText = new System.Text.StringBuilder();
 
             //DataTable _DataTable = _GetO365Data(System.Configuration.ConfigurationManager.AppSettings["ListName"], "<Where><Eq><FieldRef Name='ID' /><Value Type='Text'>" + _PageId + "</Value></Eq></Where>", "ID", "Title", "PageTitle", "Description", "MetaKey", "PageHeader", "PageImage", "PageContent");//_GetData("SELECT ID, TITLE, PAGETITLE, DESCRIPTION, METAKEY, TAGS, PAGEHEADER, ISMORE, URL, ISSIDEBAR, SIDEBARTYPE, PAGEIMAGE, TEXT FROM Page WHERE (TITLE = '" + Val.Replace("-", " ") + "')");
@@ -179,37 +172,7 @@ namespace Legalx24
                 _Literal.Text = HttpUtility.HtmlDecode(Convert.ToString(_DataTable.Rows[0]["PageContent"]).Replace("%23", "#").Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])).Replace("_#SiteURL#_", Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["HostURL"])));
             }
 
-            // _DataTable = _GetO365Data("SharepointTrainingContents", "<Where><Eq><FieldRef Name='ParentPage' LookupId='TRUE' /><Value Type='Text'>" + _PageId + "</Value> </Eq> </Where> <OrderBy>  <FieldRef Name='OrderBy'/></OrderBy>", "ID", "Title", "PageTitle", "Description", "MetaKey", "PageHeader", "PageImage", "summery");//_GetData("select  PAGEID,ID,TITLE,TitleType,LINK,POSITION,ISACTIVE ,Imagepath,DESCRIPTION from pagecontent where ISACTIVE=1 and PAGEID=" + _PageId + "  Order By Position");
-
-            // _DataList.DataSource = _DataTable;
-            //  _DataList.DataBind();
-
-            //foreach (DataRow _Row in _DataTable.Rows)
-            //{
-            //    if (_Counter % 3 == 0 || _Counter == 0)
-            //        _ContentText.Append("<div class='row'>");
-            //    _Counter++;
-            //    _ContentText.Append("<div class='col-md-4 content-sec '><h3>");
-            //    _ContentText.Append(Convert.ToString(_Row["TITLE"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
-            //    if (!String.IsNullOrEmpty(Convert.ToString(_Row["Imagepath"])))
-            //    {
-            //        _ContentText.Append("</h3> <img src='");
-            //        _ContentText.Append(Convert.ToString(_Row["Imagepath"]));
-            //        _ContentText.Append("' alt='' />");
-            //    }
-            //    //_ContentText.Append(HttpContext.Current.Server.HtmlDecode(Convert.ToString(_Row["Description"])).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
-            //    _ContentText.Append("<p class='hightcon'>");
-            //    _ContentText.Append(Convert.ToString(_Row["Description"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
-            //    _ContentText.Append("</p>");
-            //    if (!String.IsNullOrEmpty(Convert.ToString(_Row["PageLink"])))
-            //    {
-            //        _ContentText.Append("<div class='tool-tip'><a class='tooltips-more' href='");
-            //        _ContentText.Append(System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/Service/" + Convert.ToString(_Row["PageLink"]).Replace(" ", "-").Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
-            //        _ContentText.Append("'><span>MORE</span></a></div></div> ");
-            //    }
-            //    if (_Counter % 3 == 0)
-            //        _ContentText.Append("</div><div class='clearfix'></div>");
-            //}
+           
             return _ContentText.ToString();
         }
 
@@ -251,62 +214,8 @@ namespace Legalx24
                         _PageContent.Text = HttpUtility.HtmlDecode(Convert.ToString(_DataTable.Rows[0]["PageContent"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
                         if (!String.IsNullOrEmpty(Convert.ToString(_DataTable.Rows[0]["LinkTitle"])))
                             _LinkTitle = Convert.ToString(_DataTable.Rows[0]["LinkTitle"]);
-                        Int16 _Counter = 0;
-                        //System.Text.StringBuilder _ContentText = new System.Text.StringBuilder();
-                        //if (!Convert.ToString(_DataTable.Rows[0]["SIDEBARType"]).Equals("None"))
-                        //{
-                        //    _DataTable = _GetO365Data("PageLink", "<Where><Eq><FieldRef Name='ParentPage' LookupId='TRUE' /><Value Type='LookupMulti'>" + _PageId + "</Value> </Eq> </Where> <OrderBy><FieldRef Name='DisplayOrder' Ascending='TRUE'/></OrderBy>", "Title", "PageUrl", "IsGroup", "Group", "ParentPage");// _GetData("SELECT id, pageid, title, url, isgroup, Grouping FROM pagelink WHERE (pageid = '" + _PageId + "')");
-                        //    for (Int32 _Count = 0; _Count < _DataTable.Rows.Count; _Count++)
-                        //    {
-                        //        if (_Count == 0)
-                        //        {
-                        //            _ContentText.Append("<div class='col-md-4 solution-list'><h3>");
-                        //            _ContentText.Append(Convert.ToString(_DataTable.Rows[0]["Group"]));
-                        //            _ContentText.Append("</h3><ul>");
-                        //        }
-                        //        _ContentText.Append("<li><a href='");
-                        //        _ContentText.Append(System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Basepage + "/" + Convert.ToString(_DataTable.Rows[_Count]["PageUrl"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])).Replace(" ", "-"));
-                        //        _ContentText.Append("'><span></span>");
-                        //        _ContentText.Append(Convert.ToString(_DataTable.Rows[_Count]["title"]));
-                        //        _ContentText.Append("</a></li>");
-                        //        if (_Count == _DataTable.Rows.Count - 1)
-                        //            _ContentText.Append("</ul><iframe width='210' height='160' src='https://www.youtube.com/embed/gFqduiHrBaE' frameborder='0' allowfullscreen></iframe></div>");
-                        //    }
-                        //}
-                        //_SideBarLinks.Text = _ContentText.ToString();
-
-
-                        //_ContentText = new System.Text.StringBuilder();
-                        //_ContentText.Append("<div class='clearfix'></div>");
-                        //_ContentText.Append("<div class='service-grids'>");
-
-                        //_DataTable = _GetO365Data("PageContent", "<Where><Eq><FieldRef Name='ParentPage' LookupId='TRUE' /><Value Type='LookupMulti'>" + _PageId + "</Value> </Eq> </Where> ", "ParentPage", "ID", "Title", "TitleType", "PageLink", "Position", "Imagepath", "Active", "Description"); //_GetData("select PAGEID,ID,TITLE,TitleType,LINK,POSITION,ISACTIVE ,Imagepath,DESCRIPTION from pagecontent where ISACTIVE=1 and PAGEID=" + _PageId + "  Order By Position");
-                        //foreach (DataRow _Row in _DataTable.Rows)
-                        //{
-                        //    _Counter++;
-                        //    _ContentText.Append("<div class='col-md-4 content-sec '><h3>");
-                        //    _ContentText.Append(Convert.ToString(_Row["Title"]));
-                        //    if (!String.IsNullOrEmpty(Convert.ToString(_Row["Imagepath"])))
-                        //    {
-                        //        _ContentText.Append("</h3> <img src='");
-                        //        _ContentText.Append(Convert.ToString(_Row["Imagepath"]));
-                        //        _ContentText.Append("' alt='");
-                        //        // _ContentText.Append(Convert.ToString(_Row["Imagepath"]));
-                        //        _ContentText.Append("' />");
-                        //    }
-                        //    //_GetO365Data._ContentText.Append(HttpContext.Current.Server.HtmlDecode(Convert.ToString(_Row["Description"])));
-                        //    _ContentText.Append(Convert.ToString(_Row["Description"]));
-                        //    if (!String.IsNullOrEmpty(Convert.ToString(_Row["PageLink"])))
-                        //    {
-                        //        _ContentText.Append("<div class='tool-tip'><a class='tooltips-more' href='");
-                        //        _ContentText.Append(System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/Service/" + Convert.ToString(_Row["PageLink"]).Replace(" ", "-"));
-                        //        _ContentText.Append("'><span>MORE</span></a></div> ");
-                        //    }
-                        //    if (_Counter % 3 == 0)
-                        //        _ContentText.Append("<div class='clearfix'></div>");
-                        //    _ContentText.Append(" </div>");
-                        //}
-                        //_Services.Text = _ContentText.ToString();
+                     
+                       
                     }
 
                 }
@@ -334,19 +243,11 @@ namespace Legalx24
                     if (_Counter < _DataTable.Rows.Count)
                     {
                         _LiteralColl2.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + "/" + _PageName.Replace(" ", "-") + "-In-" + _GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["displayname"])) + "' title='" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["DisplayName"]) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["displayname"]) + "</a></li>";
-                        // _Counter = _Counter + 1;
-                        //}
-                        //if (_Counter < _DataTable.Rows.Count)
-                        //    _LiteralColl3.Text += "<li><a href='" + System.Configuration.ConfigurationManager.AppSettings["HostURL"] + "/" + _Page + "/" + _PageName.Replace(" ", "-") + "-In-" + DbUtility._GetFormatedURL(Convert.ToString(_DataTable.Rows[_Counter]["displayname"])) + "'>" + _PageName.Replace("-", " ") + " in " + Convert.ToString(_DataTable.Rows[_Counter]["displayname"]) + "</a></li>";
                     }
                 }
             }
         }
-        public static void _SetLocationsHome(
-     System.Web.UI.WebControls.Literal _LiteralColl1,
-     System.Web.UI.WebControls.Literal _LiteralColl2,
-     String _Page,
-     String _PageName)
+        public static void _SetLocationsHome(System.Web.UI.WebControls.Literal _LiteralColl1,System.Web.UI.WebControls.Literal _LiteralColl2,String _Page,String _PageName)
         {
             Page page = HttpContext.Current.Handler as Page;
 
@@ -377,16 +278,12 @@ namespace Legalx24
                 string city = Convert.ToString(_DataTable.Rows[i]["DisplayName"]);
                 string citySlug = _GetFormatedURL(city);
 
-                string url = host + citySlug + "/" +
-                             _Page.Replace(" ", "-") + "-In-" + citySlug;
+                string url = host + citySlug + "/" +_Page.Replace(" ", "-") + "-In-" + citySlug;
 
                 string title = _PageName.Replace("-", " ") + " in " + city;
 
                 // 🔥 INLINE CHIP STYLE (NO <p>, NO <br>)
-                sb.Append("<a href='" + url + "' title='" + title + @"'
-class='inline-block bg-gray-100 hover:bg-orange-500 hover:text-white 
-px-3 py-1 rounded-full text-xs whitespace-nowrap transition mr-2 mb-2'>
-" + title + "</a>");
+                sb.Append("<a href='" + url + "' title='" + title + @"'class='inline-block bg-gray-100 hover:bg-orange-500 hover:text-white px-3 py-1 rounded-full text-xs whitespace-nowrap transition mr-2 mb-2'>" + title + "</a>");
             }
 
             _LiteralColl1.Text = sb.ToString();

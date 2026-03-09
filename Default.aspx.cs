@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Net;
@@ -10,55 +9,64 @@ using System.Web.UI.WebControls;
 namespace Legalx24
 {
     public partial class Default : System.Web.UI.Page
-
     {
-            protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
             {
-
-                if (!IsPostBack)
+                try
                 {
-                    //DataTable dt = Utility._GetDataTable("Select count(Title) as Total, count( distinct(Batch)) as Batch from [orbexcoi_rpa].Placement");
-                    //_LiteralSuccess.Text = Convert.ToString(dt.Rows[0][0]);
-                    // _LiteralBatch.Text = Convert.ToString(dt.Rows[0][1]);
-                    // _LiteralPrac.Text = Convert.ToString(Utility._GetDataTable("select count(ID) as Active from [orbexcoi_rpa].student where Active=1").Rows[0][0]);
-                    if (!IsPostBack)
+                    // Detect City from URL
+                    if (!String.IsNullOrEmpty(Convert.ToString(this.Page.RouteData.Values["WidgetType"])) &&
+                        !this.Request.Url.ToString().ToLower().Contains("/registration/"))
                     {
-                        if (!String.IsNullOrEmpty(Convert.ToString(this.Page.RouteData.Values["WidgetType"])) && !this.Request.Url.ToString().ToLower().Contains("/registration/"))
+                        try
                         {
-                            try
-                            {
-                                string _Val = this.Request.Url.ToString().Split('/')[3];
-                                Session["City"] = Utility._GetCityNameCamlecase(_Val);
-                            }
-                            catch (Exception)
-                            {
-                            }
-                        }
-                        if (Session["City"] == null)
-                            Session["City"] = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["DefaultCity"]);
-                        if (String.IsNullOrEmpty(Convert.ToString(this.Page.RouteData.Values["WidgetType"])) || Convert.ToString(this.Page.RouteData.Values["WidgetType"]).ToLower().Equals("Criminal-Lawyer-in-" + Convert.ToString(Session["City"]).ToLower()))
-                        {
+                            string city = this.Request.Url.ToString().Split('/')[3];
+                            Session["City"] = Utility._GetCityNameCamlecase(city);
 
-                            Utility._GetMainContentText("33", _LiteralContent, null, null);
-                            // if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["SityOnly"]).Equals("0"))
-                            //     Utility._SetLocationsHome(_LiteralLocation, _LiteralLocation2, "ASP DOT NET MVC Training Institute", "ASP.NET MVC Training Institute");
-                        }
-                        else
-                        {
+                            // Detect Area from WidgetType
+                            string widget = Convert.ToString(this.Page.RouteData.Values["WidgetType"]);
 
-                            String _Val = Utility._SetPageContents(_LiteralContent, null, null);
-                            // if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["SityOnly"]).Equals("0"))
-                            //     DbUtility._SetLocationsHome(_LiteralLocation, _LiteralLocation2, _Val, _Val);
+                            if (!string.IsNullOrEmpty(widget))
+                            {
+                                string cityKey = city.ToLower() + "-";
+
+                                if (widget.ToLower().Contains(cityKey))
+                                {
+                                    string area = widget.ToLower().Split(new string[] { cityKey }, StringSplitOptions.None)[1];
+                                    Session["Area"] = area;
+                                }
+                            }
                         }
-                        // _LiteralSiteLinks.Text = System.IO.File.ReadAllText(Server.MapPath(@"~/NavigationExternalSites.html"));
+                        catch (Exception)
+                        {
+                        }
                     }
 
+                    // Default City
+                    if (Session["City"] == null)
+                        Session["City"] = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["DefaultCity"]);
 
+
+                    // If homepage or default city page
+                    if (String.IsNullOrEmpty(Convert.ToString(this.Page.RouteData.Values["WidgetType"])) ||
+                        Convert.ToString(this.Page.RouteData.Values["WidgetType"]).ToLower()
+                        .Equals("criminal-lawyer-in-" + Convert.ToString(Session["City"]).ToLower()))
+                    {
+                        Utility._GetMainContentText("33", _LiteralContent, null, null);
+                    }
+                    else
+                    {
+                        string _Val = Utility._SetPageContents(_LiteralContent, null, null);
+                    }
 
                 }
+                catch (Exception)
+                {
+                    // optional logging
+                }
             }
+        }
     }
-    
-
 }
-  

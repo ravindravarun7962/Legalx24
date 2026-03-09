@@ -225,14 +225,7 @@ namespace Legalx24
                         mobileSb.Append("<li class='border-b'>");
 
                         // parent heading (ALWAYS visible)
-                        mobileSb.AppendFormat(@"
-<button type='button'
-onclick=""this.nextElementSibling.classList.toggle('hidden')""
-class='w-full text-left py-3 font-semibold text-gray-800 flex justify-between items-center'>
-<span>{0}</span>
-<i class='fas fa-chevron-down text-xs'></i>
-</button>",
-                        HttpUtility.HtmlEncode(title));
+                        mobileSb.AppendFormat(@"<button type='button'onclick=""this.nextElementSibling.classList.toggle('hidden')""class='w-full text-left py-3 font-semibold text-gray-800 flex justify-between items-center'><span>{0}</span><i class='fas fa-chevron-down text-xs'></i></button>",HttpUtility.HtmlEncode(title));
 
                         // children list (hidden by default)
                         mobileSb.Append("<ul class='hidden pl-3 pb-2'>");
