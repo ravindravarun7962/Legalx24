@@ -3,13 +3,23 @@ using System.Web;
 using System.Text;
 using System.Data;
 using System.Web.UI;
-
+using System.Configuration;
 namespace Legalx24
 {
     public partial class Site : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // ⭐ CITY DETECT FROM URL
+            string path = Request.Url.AbsolutePath.Trim('/').ToLower();
+            string[] segments = path.Split('/');
+
+            if (segments.Length > 0 && !string.IsNullOrEmpty(segments[0]))
+            {
+                string citySlug = segments[0];
+                string city = citySlug.Replace("-", " ");
+                Session["City"] = Utility._GetCityNameCamlecase(city);
+            }
             if (!IsPostBack)
             {
                 try
@@ -17,8 +27,8 @@ namespace Legalx24
                     GenerateNavigation();
 
                     DataTable navDt = Utility._GetDataTable24("Select * from SiteNavigation where Site = 'Legalx24' order by Orderby");
-                    var programInfo = GetProgramsChildInfo(navDt); // returns (pageSlugDisplay, pageTitle)
-                    Utility._SetLocationsHome(_LiteralLocationAll, null, programInfo.Item1, programInfo.Item2);
+                    var servicesInfo = GetservicesChildInfo(navDt); // returns (pageSlugDisplay, pageTitle)
+                    Utility._SetLocationsHome(_LiteralLocationAll, null, servicesInfo.Item1, servicesInfo.Item2);
                 }
                 catch (Exception ex)
                 {
@@ -28,7 +38,7 @@ namespace Legalx24
             }
         }
 
-        private Tuple<string, string> GetProgramsChildInfo(DataTable navDt)
+        private Tuple<string, string> GetservicesChildInfo(DataTable navDt)
         {
             string defaultSlug = "Criminal-Lawyer";
             string defaultTitle = "Criminal Lawyer";
@@ -41,7 +51,7 @@ namespace Legalx24
                 // Get City
                 string city = Convert.ToString(HttpContext.Current.Session["City"] ?? "").Trim();
                 if (string.IsNullOrEmpty(city))
-                    city = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["DefaultCity"] ?? "").Trim();
+                    city = Convert.ToString(ConfigurationManager.AppSettings["DefaultCity"] ?? "").Trim();
 
                 string citySlug = city.Replace(" ", "-");
 
@@ -49,25 +59,25 @@ namespace Legalx24
 
                 // Find Programs parent
                 var parentRows = navDt.Select("ParentID IS NULL OR ParentID = 0");
-                DataRow programsParent = null;
+                DataRow servicesParent = null;
 
                 foreach (DataRow p in parentRows)
                 {
-                    string pTitle = Convert.ToString(p["Title"] ?? "");
-                    string pNav = Convert.ToString(p["Navurl"] ?? "");
-                    if (pTitle.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                        pNav.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0)
+                    string sTitle = Convert.ToString(p["Title"] ?? "");
+                    string sNav = Convert.ToString(p["Navurl"] ?? "");
+                    if (sTitle.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                        sNav.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0)
                     {
-                        programsParent = p;
+                        servicesParent = p;
                         break;
                     }
                 }
 
-                if (programsParent == null)
+                if (servicesParent == null)
                     return Tuple.Create(defaultSlug, defaultTitle);
 
                 // Get children
-                string pid = Convert.ToString(programsParent["ID"] ?? "");
+                string pid = Convert.ToString(servicesParent["ID"] ?? "");
                 DataRow[] children = navDt.Select("ParentID = " + pid);
 
                 if (children.Length == 0)
@@ -93,10 +103,10 @@ namespace Legalx24
                 // Footer link slug = {title}-Training-Institute-in-{city}
                 string slugPart = rawTitle.Replace(" ", "-");
 
-                string pageSlugDisplay = $"{slugPart}-Lawyer";
+                string pageSlugDisplay = $"{slugPart}";
 
                 // Footer title text = Title with spacing
-                string pageTitle = $"{rawTitle} Lawyer";
+                string pageTitle = $"{rawTitle}";
 
                 return Tuple.Create(pageSlugDisplay, pageTitle);
             }
@@ -118,10 +128,10 @@ namespace Legalx24
                     return;
                 }
 
-                string host = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["HostURL"] ?? "").TrimEnd('/');
+                string host = Convert.ToString(ConfigurationManager.AppSettings["HostURL"] ?? "").TrimEnd('/');
                 string city = Convert.ToString(HttpContext.Current.Session["City"] ?? "").Trim();
-                if (string.IsNullOrEmpty(city))
-                    city = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["DefaultCity"] ?? "").Trim();
+                string area = Convert.ToString(HttpContext.Current.Session["Area"] ?? "").Trim(); if (string.IsNullOrEmpty(city))
+                    city = Convert.ToString(ConfigurationManager.AppSettings["DefaultCity"] ?? "").Trim();
                 string citySlug = string.IsNullOrEmpty(city) ? "" : city.Replace(" ", "-");
 
                 StringBuilder dsktp = new StringBuilder();
@@ -131,18 +141,30 @@ namespace Legalx24
                 string BuildUrl(string rawNavUrl, bool includeCity)
                 {
                     if (string.IsNullOrWhiteSpace(rawNavUrl))
-                        return host + (includeCity && !string.IsNullOrEmpty(citySlug) ? "/" + citySlug : "");
+                        return host;
 
                     string nav = rawNavUrl.Replace("_#City#_", city).Trim();
                     nav = nav.TrimStart('/').Replace(" ", "-");
 
-                    if (nav.StartsWith("http://", StringComparison.OrdinalIgnoreCase) || nav.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+                    if (nav.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+                        nav.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
                         return nav;
 
-                    if (includeCity && !string.IsNullOrEmpty(citySlug))
-                        return host + "/" + citySlug + "/" + nav;
+                    string url = host;
 
-                    return host + "/" + nav;
+                    if (includeCity && !string.IsNullOrEmpty(citySlug))
+                        url += "/" + citySlug;
+
+                    // 🔥 area slug inside widgetType
+                    if (!string.IsNullOrEmpty(area) && nav.Contains("-in-"))
+                    {
+                        string areaSlug = area.Replace(" ", "-");
+                        nav = nav + "-" + areaSlug;
+                    }
+
+                    url += "/" + nav;
+
+                    return url;
                 }
 
                 foreach (DataRow row in parents)
@@ -158,14 +180,14 @@ namespace Legalx24
                     else
                         children = dt.Select("ParentID = '" + idRaw.Replace("'", "''") + "'");
 
-                    // detect Programs parent (adjust if needed)
-                    bool isProgramsParent = (!string.IsNullOrEmpty(title) && title.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0)
+                    // detect Services parent (adjust if needed)
+                    bool isServicesParent = (!string.IsNullOrEmpty(title) && title.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0)
                                             || (!string.IsNullOrEmpty(parentNav) && parentNav.IndexOf("Services", StringComparison.OrdinalIgnoreCase) >= 0);
 
                     if (children.Length == 0)
                     {
                         // leaf item: include city only for Programs if desired
-                        string url = BuildUrl(parentNav, includeCity: isProgramsParent);
+                        string url = BuildUrl(parentNav, includeCity: isServicesParent);
                         dsktp.AppendFormat("<li><a href='{0}' class='hover:text-orange-400'>{1}</a></li>", HttpUtility.HtmlAttributeEncode(url), HttpUtility.HtmlEncode(title));
 
                         // mobile: single item
@@ -173,9 +195,9 @@ namespace Legalx24
                     }
                     else
                     {
-                        // For Programs parent: parent link should default to first child (with city)
+                        // For Services parent: parent link should default to first child (with city)
                         string parentDefaultLink = null;
-                        if (isProgramsParent && children.Length > 0)
+                        if (isServicesParent && children.Length > 0)
                         {
                             string firstChildNav = Convert.ToString(children[0]["Navurl"] ?? "");
                             parentDefaultLink = BuildUrl(firstChildNav, includeCity: true);
@@ -206,7 +228,7 @@ namespace Legalx24
                             string childNav = Convert.ToString(child["Navurl"] ?? "");
                             string childTitle = Convert.ToString(child["Title"] ?? "").Replace("_#City#_", city);
 
-                            string childUrl = BuildUrl(childNav, includeCity: isProgramsParent);
+                            string childUrl = BuildUrl(childNav, includeCity: isServicesParent);
 
                             dsktp.AppendFormat("<a href='{0}' class='block py-2 px-3 hover:text-orange-600 hover:bg-orange-50 rounded-md transition-all duration-200 text-[15px] whitespace-normal leading-tight'>{1}</a>", HttpUtility.HtmlAttributeEncode(childUrl), HttpUtility.HtmlEncode(childTitle));
 
@@ -234,7 +256,7 @@ namespace Legalx24
                         {
                             string childNav = Convert.ToString(child["Navurl"] ?? "");
                             string childTitle = Convert.ToString(child["Title"] ?? "").Replace("_#City#_", city);
-                            string childUrl = BuildUrl(childNav, includeCity: isProgramsParent);
+                            string childUrl = BuildUrl(childNav, includeCity: isServicesParent);
 
                             mobileSb.AppendFormat(
                                 "<li><a href='{0}' class='block py-1 px-2 text-sm text-gray-700 hover:text-orange-500'>{1}</a></li>",

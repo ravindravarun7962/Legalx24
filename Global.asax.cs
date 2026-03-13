@@ -17,27 +17,33 @@ namespace Legalx24
         }
         void RegisterRoutes(RouteCollection routes)
         {
+            DataTable _DataTable = Utility._GetLocation();
 
-            DataTable _DataTable = Utility._GetLocation(); //new Web.DBHelper._DatabaseUtility()._GetDataSet("SELECT * FROM city").Tables[0];
             foreach (DataRow _Row in _DataTable.Rows)
-                if (!string.IsNullOrEmpty(Convert.ToString(_Row["displayname"])) && !Convert.ToString(_Row["displayname"]).Contains('(') && !Convert.ToString(_Row["displayname"]).Contains('/') && !Convert.ToString(_Row["displayname"]).Contains('\\') && !Convert.ToString(_Row["displayname"]).Contains('-'))
+            {
+                string city = Convert.ToString(_Row["city_name"]);
+
+                if (!string.IsNullOrEmpty(city) &&
+                    !city.Contains("(") &&
+                    !city.Contains("/") &&
+                    !city.Contains("\\") &&
+                    !city.Contains("-"))
                 {
                     try
                     {
-                        routes.MapPageRoute(Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])), Utility._GetFormatedURL(Convert.ToString(_Row["displayname"])) + "/{WidgetType}", "~/Default.aspx");
+                        string citySlug = Utility._GetFormatedURL(city);
+
+                        routes.MapPageRoute(
+                            citySlug,
+                            citySlug + "/{WidgetType}",
+                            "~/Default.aspx"
+                        );
                     }
                     catch (Exception)
                     {
                     }
                 }
-            routes.MapPageRoute("Distance-Learning", "Distance-Learning/{WidgetType}", "~/DistanceLearning.aspx");
-            routes.MapPageRoute("registration", "registration/{WidgetType}", "~/registration.aspx");
-            routes.MapPageRoute("sponsorship", "sponsorship/{Page}", "~/sponsorship.aspx");
-            routes.MapPageRoute("placements", "placements/{Page}", "~/placements.aspx");
-            routes.MapPageRoute("StudentCorner", "StudentCorner/{Page}", "~/StudentCorner.aspx");
-            routes.MapPageRoute("certification", "certification/{WidgetType}", "~/certification.aspx");
-            //routes.MapPageRoute("training", "training/{City}/{Tech}/{Page}", "~/training.aspx");
-            //routes.MapPageRoute("tags", "tags/{ket}", "~/tags.aspx");
+            }
         }
 
         protected void Session_Start(object sender, EventArgs e)
