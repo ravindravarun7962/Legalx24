@@ -8,7 +8,8 @@
    <section class="px-5 py-[60px] bg-white"> 
       <div class="container mx-auto">
          <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold text-slate-900 mb-2     after:block after:w-[65px] after:h-1 after:bg-sky-500 after:mt-2"> Understanding Banking Disputes </h2>
-         <p class="text-[16px] text-slate-600 leading-8 mb-2"> Banking disputes may involve issues relating to loan agreements, mortgage enforcement, wrongful classification of accounts as NPAs, unauthorized transactions, guarantee liabilities, or unfair recovery practices. </p>
+                     
+    <p class="text-[16px] text-slate-600 leading-8 mb-2"> Banking disputes may involve issues relating to loan agreements, mortgage enforcement, wrongful classification of accounts as NPAs, unauthorized transactions, guarantee liabilities, or unfair recovery practices. </p>
          <p class="text-[16px] text-slate-600 leading-8"> Given the regulatory framework governing banks and financial institutions, dispute resolution requires structured legal strategy and compliance with statutory provisions. </p>
       </div> </section> 
    <section class="px-5 py-[60px] bg-slate-100"> 

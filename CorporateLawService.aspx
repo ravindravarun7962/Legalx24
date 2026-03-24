@@ -17,7 +17,8 @@
       </div>
       <div class="mb-12">
          <div class="bg-white p-10 border-l-[6px] border-blue-600 rounded-[18px] shadow-xl">
-            <p class="text-[16px] leading-8 text-gray-700"> Corporate and business law covers the rules that govern how companies are formed, managed, and regulated. It includes incorporation, governance, statutory compliance, commercial agreements, investments, and dispute handling. Proper legal structuring at the right time often prevents serious issues later. </p>
+            
+             <p class="text-[16px] leading-8 text-gray-700"> Corporate and business law covers the rules that govern how companies are formed, managed, and regulated. It includes incorporation, governance, statutory compliance, commercial agreements, investments, and dispute handling. Proper legal structuring at the right time often prevents serious issues later. </p>
             <p class="mt-4 text-gray-700 leading-8"> At 
                <strong>Legalx24</strong>, we regularly work with founders, management teams, and business owners who need clear legal guidance without unnecessary complexity. Our approach is practical and business-oriented — we explain risks, suggest workable options, and help you take legally sound decisions. </p>
             <p class="mt-4 text-gray-700 leading-8"> Whether you are launching a venture, bringing in investors, entering a commercial arrangement, or dealing with an internal or external dispute, our team provides straightforward legal advice aimed at protecting your organisation and supporting stable growth. </p>

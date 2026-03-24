@@ -10,8 +10,9 @@
    <section class="px-5 py-[70px]"> 
       <div class="max-w-[1100px] mx-auto">
          <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold mb-5 text-slate-800 relative after:content-[&#39;&#39;] after:block after:w-[70px] after:h-1 after:bg-pink-600 after:mt-2 after:rounded"> What is Divorce? </h2>
-         <p class="text-[16px] leading-[2] text-slate-600 mb-3"> Divorce is a judicial remedy through which a marriage is legally dissolved by a decree of a competent court. Once the decree is granted, the matrimonial relationship ceases to exist in the eyes of law, and the parties are restored to their independent legal status. </p>
-         <p class="text-slate-600 leading-[2] mb-3"> Divorce proceedings are governed by personal laws applicable to the parties, and the court examines whether statutory grounds have been established. The burden of proof, procedural compliance, and presentation of evidence play a decisive role in the outcome of the case. </p>
+               <p class="text-[16px] leading-[2] text-slate-600 mb-3"> Divorce is a judicial remedy through which a marriage is legally dissolved by a decree of a competent court. Once the decree is granted, the matrimonial relationship ceases to exist in the eyes of law, and the parties are restored to their independent legal status. </p>
+    
+          <p class="text-slate-600 leading-[2] mb-3"> Divorce proceedings are governed by personal laws applicable to the parties, and the court examines whether statutory grounds have been established. The burden of proof, procedural compliance, and presentation of evidence play a decisive role in the outcome of the case. </p>
          <p class="text-slate-600 leading-[2]"> Proper legal guidance ensures that rights are safeguarded, procedural requirements are fulfilled, and disputes are resolved in a structured and dignified manner. </p>
       </div> </section> 
    <section class="bg-purple-50 border-y border-purple-100 px-5 py-[70px]"> 

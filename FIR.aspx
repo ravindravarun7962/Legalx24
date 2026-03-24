@@ -10,7 +10,7 @@
       <div class="row items-center">
          <div class="col-lg-6">
             <h2 class="font-extrabold text-[clamp(26px,3vw,34px)] text-[#111827] mb-3 after:content-[&#39;&#39;] after:block after:w-[65px] after:h-[3px] after:bg-red-600 after:mt-2"> Understanding FIR (First Information Report) </h2>
-            <p class="text-[16px] leading-[1.9] text-[#374151] mb-3"> An FIR is a formal complaint recorded by the police when information regarding a cognizable offence is received. It initiates criminal investigation proceedings. </p>
+           <p class="text-[16px] leading-[1.9] text-[#374151] mb-3"> An FIR is a formal complaint recorded by the police when information regarding a cognizable offence is received. It initiates criminal investigation proceedings. </p>
             <p class="text-[16px] leading-[1.9] text-[#374151]"> Once registered, the police may begin investigation, record statements, collect evidence, and proceed with arrest if required. </p>
          </div>
          <div class="col-lg-6"> 

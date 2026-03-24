@@ -14,6 +14,7 @@
          </div>
       </div>
       <div class="bg-white p-10 rounded-[22px] shadow-xl mb-12">
+          
          <p class="text-[16px] leading-8 text-gray-700"> Banking and finance law covers the legal side of lending, borrowing, recovery of dues, insolvency proceedings, and disputes between banks, NBFCs, companies, and individual borrowers. As financial transactions become more structured and regulated, proper legal guidance plays an important role in avoiding procedural mistakes and protecting financial interests. </p>
          <p class="mt-4 text-gray-700 leading-8"> It includes matters such as preparation and verification of loan documents, secured and unsecured lending, enforcement of securities, recovery proceedings, restructuring of stressed accounts, and compliance with regulatory directions issued by authorities like the Reserve Bank of India. </p>
          <p class="mt-4 text-gray-700 leading-8"> Banking disputes often arise from loan defaults, NPA classification, enforcement notices, insolvency filings, or disagreements over repayment terms and contractual obligations. Seeking legal advice at the right stage usually helps in controlling risk and resolving the issue in a more effective manner. </p>

@@ -21,7 +21,8 @@
    <section class="px-5 py-[55px] bg-gray-50"> 
       <div class="container mx-auto">
          <h2 class="font-extrabold text-[clamp(24px,3vw,32px)] text-gray-900 mb-3 after:block after:w-[60px] after:h-[3px] after:bg-red-500 after:mt-1"> Types of Consumer Disputes </h2>
-         <p class="text-[15.8px] leading-7 text-gray-600 mb-2"> Consumer disputes commonly arise in matters relating to banking services, insurance claims, real estate transactions, defective products, e-commerce fraud, medical negligence, and telecommunication services. </p>
+        
+          <p class="text-[15.8px] leading-7 text-gray-600 mb-2"> Consumer disputes commonly arise in matters relating to banking services, insurance claims, real estate transactions, defective products, e-commerce fraud, medical negligence, and telecommunication services. </p>
          <p class="text-[15.8px] leading-7 text-gray-600 mb-4"> Consumers may seek compensation, replacement of goods, refund, damages for mental harassment, and other appropriate relief. </p>
          <div class="bg-white border-l-[6px] border-red-500 p-6 rounded-[10px] shadow-lg my-6 font-semibold"> The consumer protection system ensures accountability of service providers while safeguarding consumer interests. </div>
       </div> </section> 

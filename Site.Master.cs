@@ -10,16 +10,7 @@ namespace Legalx24
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // ⭐ CITY DETECT FROM URL
-            string path = Request.Url.AbsolutePath.Trim('/').ToLower();
-            string[] segments = path.Split('/');
-
-            if (segments.Length > 0 && !string.IsNullOrEmpty(segments[0]))
-            {
-                string citySlug = segments[0];
-                string city = citySlug.Replace("-", " ");
-                Session["City"] = Utility._GetCityNameCamlecase(city);
-            }
+           
             if (!IsPostBack)
             {
                 try

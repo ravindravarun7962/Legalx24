@@ -23,21 +23,13 @@ namespace Legalx24
             {
                 string city = Convert.ToString(_Row["city_name"]);
 
-                if (!string.IsNullOrEmpty(city) &&
-                    !city.Contains("(") &&
-                    !city.Contains("/") &&
-                    !city.Contains("\\") &&
-                    !city.Contains("-"))
+                if (!string.IsNullOrEmpty(city) &&!city.Contains("(") &&!city.Contains("/") &&!city.Contains("\\") &&!city.Contains("-"))
                 {
                     try
                     {
                         string citySlug = Utility._GetFormatedURL(city);
 
-                        routes.MapPageRoute(
-                            citySlug,
-                            citySlug + "/{WidgetType}",
-                            "~/Default.aspx"
-                        );
+                        routes.MapPageRoute(citySlug,citySlug + "/{WidgetType}","~/Default.aspx");
                     }
                     catch (Exception)
                     {

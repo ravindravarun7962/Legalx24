@@ -10,9 +10,9 @@
       </div>
       <div class="grid md:grid-cols-2 gap-10 items-center mb-14">
          <div class="bg-white rounded-2xl p-10 shadow-xl">
-            <p class="text-lg leading-8 text-gray-700"> Criminal law deals with offences that may lead to arrest, prosecution, and punishment such as imprisonment or fine. At 
+              <p class="text-lg leading-8 text-gray-700"> Criminal law deals with offences that may lead to arrest, prosecution, and punishment such as imprisonment or fine. At 
                <strong>Legalx24</strong>, we assist clients from the very first stage — whether it is a police complaint, investigation, or court proceedings — ensuring their rights are properly protected throughout the case. </p>
-            <p class="mt-4 leading-8 text-gray-600"> Our criminal lawyers regularly handle urgent and sensitive matters including FIR disputes, arrests, questioning by police, and ongoing criminal trials. Every matter is handled with confidentiality, careful planning, and a clear legal approach suited to the facts of the case. </p>
+    <p class="mt-4 leading-8 text-gray-600"> Our criminal lawyers regularly handle urgent and sensitive matters including FIR disputes, arrests, questioning by police, and ongoing criminal trials. Every matter is handled with confidentiality, careful planning, and a clear legal approach suited to the facts of the case. </p>
             <p class="mt-4 leading-8 text-gray-600"> We understand that criminal proceedings can be stressful and time-sensitive. Our team works promptly to prevent unlawful detention, check procedural lapses, and make sure each client receives a fair opportunity to defend their case under the law. </p>
          </div>
          <div class="text-center">

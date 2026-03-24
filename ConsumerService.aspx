@@ -17,8 +17,8 @@
          </div>
       </div>
       <div class="bg-white p-10 rounded-[22px] shadow-xl mb-12">
-         <p class="text-[16px] leading-8 text-gray-700"> Consumer protection laws are meant to safeguard buyers and service users from unfair or deceptive business conduct. Many consumers face issues such as defective products, unsatisfactory services, delivery delays, misleading advertisements, or refusal of legitimate claims. </p>
-         <p class="mt-4 text-gray-700 leading-8"> The Consumer Protection Act provides a clear legal process for raising grievances and seeking compensation through Consumer Dispute Redressal Commissions at the district, state, and national levels. These forums are designed to offer accessible and time-bound remedies to affected consumers. </p>
+                  <p class="text-[16px] leading-8 text-gray-700"> Consumer protection laws are meant to safeguard buyers and service users from unfair or deceptive business conduct. Many consumers face issues such as defective products, unsatisfactory services, delivery delays, misleading advertisements, or refusal of legitimate claims. </p>
+  <p class="mt-4 text-gray-700 leading-8"> The Consumer Protection Act provides a clear legal process for raising grievances and seeking compensation through Consumer Dispute Redressal Commissions at the district, state, and national levels. These forums are designed to offer accessible and time-bound remedies to affected consumers. </p>
          <p class="mt-4 text-gray-700 leading-8"> At 
             <strong>Legalx24</strong>, we guide clients through each stage of the consumer dispute process — from reviewing the issue and preparing legal notices to filing complaints, representing clients before consumer commissions, and assisting in enforcement of favourable orders. </p>
          <p class="mt-4 text-gray-700 leading-8"> Our aim is to ensure consumers receive fair treatment and appropriate compensation while holding businesses, service providers, and professionals legally responsible for violations of consumer rights. </p>

@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using System.Configuration;
 
 
 namespace Legalx24
@@ -28,7 +29,6 @@ namespace Legalx24
             Page page = HttpContext.Current.Handler as Page;
             DataTable _DataTable = new DataTable();//IsActive=1 AND
             SqlDataAdapter _DataAdapter;
-            // _DataAdapter = new SqlDataAdapter("Select   ID, Title, displayname, isactive from City where isactive=1 AND CountryCode IN (" + System.Configuration.ConfigurationManager.AppSettings["Country"] + ")", System.Configuration.ConfigurationManager.ConnectionStrings["Locationlive"].ConnectionString);
             _DataAdapter = new SqlDataAdapter("SELECT city_name FROM cities",ConfigurationManager.ConnectionStrings["S24"].ConnectionString);
             _DataAdapter.Fill(_DataTable);
             return _DataTable;
@@ -67,7 +67,34 @@ namespace Legalx24
                 page.Header.Controls.Add(description);
                 if (_LiteralHeader != null)
                     _LiteralHeader.Text = Convert.ToString(_DataTable.Rows[0]["PageHeader"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"]));
-                _Literal.Text = HttpUtility.HtmlDecode(Convert.ToString(_DataTable.Rows[0]["PageContent"]).Replace("%23", "#").Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])).Replace("_#SiteURL#_", Convert.ToString(ConfigurationManager.AppSettings["HostURL"])));
+                // 🔥 GET CITY FROM SESSION (already working) maine yha update kiya
+                string city = Convert.ToString(HttpContext.Current.Session["City"]);
+
+                // 🔥 GET AREA FROM URL
+                string area = "";
+                string widget = Convert.ToString(HttpContext.Current.Request.RequestContext.RouteData.Values["WidgetType"]);
+
+                if (!string.IsNullOrEmpty(widget) && widget.Contains("-in-"))
+                {
+                    string locationPart = widget.Split(new string[] { "-in-" }, StringSplitOptions.None)[1];
+
+                    var parts = locationPart.Split('-');
+
+                    if (parts.Length > 1)
+                    {
+                        // 🔥 skip first (city), rest is area
+                        area = string.Join(" ", parts.Skip(1));
+                    }
+                }
+
+                // 🔥 FINAL REPLACE (CITY + AREA)
+                _Literal.Text = HttpUtility.HtmlDecode(
+                    Convert.ToString(_DataTable.Rows[0]["PageContent"])
+                    .Replace("%23", "#")
+                    .Replace("_#City#_", city)
+                    .Replace("_#Area#_", area) // 🔥 NEW
+                    .Replace("_#SiteURL#_", Convert.ToString(ConfigurationManager.AppSettings["HostURL"]))
+                );
             }
 
            
@@ -111,8 +138,32 @@ namespace Legalx24
                         page.Header.Controls.Add(description);
                         if (_PageHeader != null)
                             _PageHeader.Text = Convert.ToString(_DataTable.Rows[0]["PageHeader"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"]));
-                        _PageContent.Text = HttpUtility.HtmlDecode(Convert.ToString(_DataTable.Rows[0]["PageContent"]).Replace("_#City#_", Convert.ToString(HttpContext.Current.Session["City"])));
-                        if (!String.IsNullOrEmpty(Convert.ToString(_DataTable.Rows[0]["LinkTitle"])))
+                        // 🔥 GET CITY
+                        string city = Convert.ToString(HttpContext.Current.Session["City"]);
+
+                        // 🔥 GET AREA (same logic)
+                        string area = "";
+                         widget = Convert.ToString(page.RouteData.Values["WidgetType"]);
+
+                        if (!string.IsNullOrEmpty(widget) && widget.Contains("-in-"))
+                        {
+                            string locationPart = widget.Split(new string[] { "-in-" }, StringSplitOptions.None)[1];
+
+                            var parts = locationPart.Split('-');
+
+                            if (parts.Length > 1)
+                            {
+                                area = string.Join(" ", parts.Skip(1));
+                            }
+                        }
+
+                        // 🔥 FINAL CONTENT REPLACE
+                        string content = Convert.ToString(_DataTable.Rows[0]["PageContent"]);
+
+                        content = content.Replace("_#City#_", city)
+                                         .Replace("_#Area#_", area); // 🔥 NEW
+
+                        _PageContent.Text = HttpUtility.HtmlDecode(content); if (!String.IsNullOrEmpty(Convert.ToString(_DataTable.Rows[0]["LinkTitle"])))
                             _LinkTitle = Convert.ToString(_DataTable.Rows[0]["LinkTitle"]);
                      
                        
@@ -198,6 +249,5 @@ namespace Legalx24
         }
 
        
-
     }
 }

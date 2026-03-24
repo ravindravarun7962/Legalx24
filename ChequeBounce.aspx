@@ -4,7 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <section class="text-center text-white px-5 py-[110px] bg-[linear-gradient(120deg,rgba(2,6,23,.92),rgba(15,23,42,.82)),url(&#39;https://legalx24.com/img/cheque-hero.jpg&#39;)] bg-cover bg-center">
       <h1 class="font-black text-[clamp(34px,4.2vw,48px)]"> Cheque Bounce Cases – Section 138 NI Act </h1>
-      <p class="max-w-[900px] mx-auto mt-3 text-[17px] leading-8"> When a cheque issued for payment gets dishonoured, it can create serious financial and legal trouble. Under Section 138 of the Negotiable Instruments Act, cheque bounce is treated as a criminal offence, giving the payee a strong legal remedy to recover the amount and enforce accountability. </p></section><section class="px-5 py-[55px] bg-white">
+      
+    <p class="max-w-[900px] mx-auto mt-3 text-[17px] leading-8"> When a cheque issued for payment gets dishonoured, it can create serious financial and legal trouble. Under Section 138 of the Negotiable Instruments Act, cheque bounce is treated as a criminal offence, giving the payee a strong legal remedy to recover the amount and enforce accountability. </p></section><section class="px-5 py-[55px] bg-white">
       <div class="container mx-auto">
          <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold text-slate-950 mb-2 after:block after:w-[65px] after:h-1 after:bg-green-600 after:mt-2"> What is a Cheque Bounce? </h2>
          <p class="text-[16px] text-slate-600 leading-8 mb-2"> A cheque bounce happens when the bank refuses to honour a cheque at the time of presentation. This can occur for several reasons such as insufficient balance, closed account, signature mismatch, stop payment instructions, or exceeding the sanctioned limit. </p>

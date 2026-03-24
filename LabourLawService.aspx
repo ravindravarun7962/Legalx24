@@ -17,8 +17,8 @@
          </div>
       </div>
       <div class="bg-white p-[40px] rounded-[22px] shadow-[0_16px_40px_rgba(0,0,0,0.08)] mb-5">
-         <p class="text-[16px] leading-[1.9] text-[#444]"> Labour and employment laws govern the working relationship between employers, employees, contractors, and industrial establishments. These regulations aim to ensure fair treatment, workplace safety, timely payment of wages, and balanced industrial relations. </p>
-         <p class="text-[16px] leading-[1.9] text-[#444] mt-2"> Workplace disputes can arise for many reasons, including termination issues, unpaid salary or benefits, disciplinary action, harassment complaints, compliance gaps, or conflicts between management and staff. Such matters often require timely legal advice to prevent escalation. </p>
+                 <p class="text-[16px] leading-[1.9] text-[#444]"> Labour and employment laws govern the working relationship between employers, employees, contractors, and industrial establishments. These regulations aim to ensure fair treatment, workplace safety, timely payment of wages, and balanced industrial relations. </p>
+    <p class="text-[16px] leading-[1.9] text-[#444] mt-2"> Workplace disputes can arise for many reasons, including termination issues, unpaid salary or benefits, disciplinary action, harassment complaints, compliance gaps, or conflicts between management and staff. Such matters often require timely legal advice to prevent escalation. </p>
          <p class="text-[16px] leading-[1.9] text-[#444] mt-2"> At 
             <strong>Legalx24</strong>, we advise employees, employers, unions, startups, MSMEs, and larger organisations on both dispute resolution and preventive compliance. Our services cover representation before labour authorities as well as drafting policies and legal frameworks to reduce workplace risk. </p>
          <p class="text-[16px] leading-[1.9] text-[#444] mt-2"> We combine knowledge of labour legislation with practical understanding of workplace realities, so that the legal solution is workable as well as compliant. </p>

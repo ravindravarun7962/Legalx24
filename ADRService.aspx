@@ -6,6 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Literal ID="ltrContent" runat="server"></asp:Literal>
    <div class="container mx-auto py-12 px-4 font-[&#39;Segoe_UI&#39;,Arial,sans-serif]"> 
       <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-10 md:p-14 rounded-[28px] mb-12">
          <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -22,6 +23,7 @@
       <div class="bg-white p-9 rounded-[22px] shadow-lg mb-12">
          <p class="text-[16px] leading-8 text-gray-700"> 
             <strong>Court cases drag on forever.</strong> ADR gets you out clean and quick. We&#39;ve helped businesses, families, and partners resolve everything from contract fights to property battles without stepping foot in court. </p>
+        
          <p class="mt-3 text-gray-700 leading-8"> Commercial disputes? Divorce settlements? Partnership splits? Employment issues? We&#39;ve seen it all and settled most of it before it ever got ugly. </p>
          <p class="mt-3 text-gray-700 leading-8"> At Legalx24, we don&#39;t just talk process—we deliver results. Experienced arbitrators and mediators who actually understand Indian law and how business works. </p>
       </div> 

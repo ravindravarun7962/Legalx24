@@ -13,8 +13,8 @@
       <div class="container mx-auto">
          <div class="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-               <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold text-slate-900 mb-4             after:block after:w-[70px] after:h-1 after:bg-[#c9a14a] after:mt-3"> Understanding Arbitration </h2>
-               <p class="text-gray-700 text-[16px] leading-8 mb-4"> Arbitration is a private dispute resolution process where parties agree to submit their disputes to one or more neutral arbitrators instead of approaching traditional courts. The decision given by the arbitral tribunal, known as an arbitral award, is final and legally enforceable under Indian law. </p>
+               <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold text-slate-900 mb-4  after:block after:w-[70px] after:h-1 after:bg-[#c9a14a] after:mt-3"> Understanding Arbitration </h2>
+                              <p class="text-gray-700 text-[16px] leading-8 mb-4"> Arbitration is a private dispute resolution process where parties agree to submit their disputes to one or more neutral arbitrators instead of approaching traditional courts. The decision given by the arbitral tribunal, known as an arbitral award, is final and legally enforceable under Indian law. </p>
                <p class="text-gray-700 text-[16px] leading-8"> Arbitration has become the preferred choice for resolving high-value commercial and contractual disputes due to its flexibility, confidentiality, and speed. Unlike conventional litigation, arbitration allows parties to select decision-makers with specific expertise relevant to the dispute. </p>
             </div>
             <div> 
@@ -24,7 +24,8 @@
    <section class="px-5 py-[clamp(60px,8vw,90px)] bg-slate-50"> 
       <div class="container mx-auto">
          <h2 class="text-[clamp(26px,3vw,34px)] font-extrabold text-slate-900 mb-4     after:block after:w-[70px] after:h-1 after:bg-[#c9a14a] after:mt-3"> Legal Framework Governing Arbitration in India </h2>
-         <p class="text-gray-700 text-[16px] leading-8 mb-4"> Arbitration in India is governed by the Arbitration and Conciliation Act, 1996, which is based on the UNCITRAL Model Law. The Act provides a comprehensive legal framework for domestic arbitration, international commercial arbitration, and enforcement of arbitral awards. </p>
+                 
+       <p class="text-gray-700 text-[16px] leading-8 mb-4"> Arbitration in India is governed by the Arbitration and Conciliation Act, 1996, which is based on the UNCITRAL Model Law. The Act provides a comprehensive legal framework for domestic arbitration, international commercial arbitration, and enforcement of arbitral awards. </p>
          <p class="text-gray-700 text-[16px] leading-8 mb-6"> Indian courts play a supervisory role in arbitration matters, intervening only in limited circumstances such as appointment of arbitrators, grant of interim relief, or setting aside an arbitral award on specific statutory grounds. </p>
          <div class="bg-white border-l-[6px] border-[#c9a14a] p-8 rounded-[10px] shadow-xl my-8">
             <p class="font-semibold m-0"> The objective of Indian arbitration law is to minimize judicial intervention and promote party autonomy while ensuring fairness, transparency, and enforceability of arbitral awards. </p>

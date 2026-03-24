@@ -17,8 +17,8 @@
          </div>
       </div>
       <div class="bg-white p-[40px] rounded-[22px] shadow-[0_18px_45px_rgba(0,0,0,0.08)] mb-12">
-         <p class="leading-[1.95] text-[16px] text-[#333]"> Property and real estate transactions in India often involve multiple legal checks, documentation requirements, and regulatory approvals. Even a small oversight in title verification or paperwork can lead to disputes, financial loss, or long-term complications. </p>
-         <p class="leading-[1.95] text-[16px] text-[#333] mt-2"> At 
+              <p class="leading-[1.95] text-[16px] text-[#333]"> Property and real estate transactions in India often involve multiple legal checks, documentation requirements, and regulatory approvals. Even a small oversight in title verification or paperwork can lead to disputes, financial loss, or long-term complications. </p>
+    <p class="leading-[1.95] text-[16px] text-[#333] mt-2"> At 
             <strong>Legalx24</strong>, we provide end-to-end legal support for property purchase, sale, verification, documentation, litigation, and compliance matters. Our focus is on protecting ownership rights, identifying risks early, and ensuring that transactions are legally secure. </p>
          <p class="leading-[1.95] text-[16px] text-[#333] mt-2"> Whether you are purchasing property, resolving a family partition dispute, dealing with builder delays, facing tenant issues, or planning a RERA complaint, our real estate lawyers offer clear, practical legal guidance based on your situation. </p>
       </div>

@@ -216,6 +216,12 @@
     background:#f97316;
     border-radius:10px;
 }
+.location-links a{
+    display:block !important;
+    font-size:14px !important;
+    padding:4px 0;
+    border-bottom:1px solid #eee;
+}
     </style>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -422,10 +428,9 @@
                           <div id="content-location" class="tab-pane hidden text-sm">
 
                   <!-- SCROLL BOX -->
-                 <div class="max-h-[100px] overflow-y-auto pr-2 text-base">
-               <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
-
-              </div>
+                <div class="max-h-[100px] overflow-y-auto pr-2 text-base location-links">
+    <asp:Literal runat="server" ID="_LiteralLocationAll"></asp:Literal>
+</div>
 
          </div>
 

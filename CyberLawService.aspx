@@ -17,8 +17,8 @@
       </div>
       <div class="mb-12">
          <div class="bg-white p-10 border-l-[6px] border-blue-600 rounded-[20px] shadow-xl">
-            <p class="text-[16px] leading-8 text-gray-700"> Cyber and technology law covers legal issues arising from the use of computers, the internet, digital systems, and online platforms. With increasing reliance on online banking, digital communication, and social media, disputes and cyber offences have become more common and often require quick legal intervention. </p>
-            <p class="mt-4 text-gray-700 leading-8"> Such matters may involve hacking, identity theft, online fraud, data leaks, cyber stalking, defamatory online content, or misuse of digital accounts and platforms. Handling these issues usually requires both legal knowledge and an understanding of how digital evidence works. </p>
+                  <p class="text-[16px] leading-8 text-gray-700"> Cyber and technology law covers legal issues arising from the use of computers, the internet, digital systems, and online platforms. With increasing reliance on online banking, digital communication, and social media, disputes and cyber offences have become more common and often require quick legal intervention. </p>
+     <p class="mt-4 text-gray-700 leading-8"> Such matters may involve hacking, identity theft, online fraud, data leaks, cyber stalking, defamatory online content, or misuse of digital accounts and platforms. Handling these issues usually requires both legal knowledge and an understanding of how digital evidence works. </p>
             <p class="mt-4 text-gray-700 leading-8"> At 
                <strong>Legalx24</strong>, we assist individuals, startups, and companies in protecting their online presence, confidential data, intellectual property, and digital reputation. Our advice is practical and focused on resolving the issue as early as possible. </p>
             <p class="mt-4 text-gray-700 leading-8"> We support clients from the initial complaint stage — including filing cyber complaints and coordinating with cyber cells — through investigation, court proceedings, and preventive compliance planning. </p>

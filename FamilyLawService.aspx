@@ -6,8 +6,8 @@
  <div class="container mx-auto py-12 px-4">
       <div class="bg-gradient-to-br from-[#0f172a] to-[#1f2937] text-white text-center  p-[70px] px-8 rounded-[22px] mb-[70px] shadow-[0_22px_45px_rgba(0,0,0,0.30)]">
          <h1 class="font-extrabold text-[38px] tracking-[0.5px]"> Family Law Services </h1>
-         <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-3 leading-[1.8]"> Sensitive and practical legal support for personal and family matters involving marriage, children, financial support, and domestic relationships. </p>
-         <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-2 leading-[1.8]"> We handle family cases with discretion and care, while making sure your legal rights remain fully protected. </p>
+                 <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-3 leading-[1.8]"> Sensitive and practical legal support for personal and family matters involving marriage, children, financial support, and domestic relationships. </p>
+  <p class="text-[18px] opacity-90 max-w-[850px] mx-auto mt-2 leading-[1.8]"> We handle family cases with discretion and care, while making sure your legal rights remain fully protected. </p>
       </div>
       <div class="row mb-5 items-center">
          <div class="col-md-6">

@@ -17,8 +17,8 @@
          </div>
       </div>
       <div class="bg-white p-[40px] rounded-[24px] shadow-[0_18px_45px_rgba(0,0,0,0.08)] mb-12">
-         <p class="text-[16px] leading-[1.95] text-[#334155]"> Public and government law matters often involve interpretation of constitutional provisions, administrative orders, regulatory actions, and protection of citizen rights. Such cases can significantly impact personal rights, employment, business interests, or public policy. </p>
-         <p class="text-[16px] leading-[1.95] text-[#334155] mt-2"> At 
+                <p class="text-[16px] leading-[1.95] text-[#334155]"> Public and government law matters often involve interpretation of constitutional provisions, administrative orders, regulatory actions, and protection of citizen rights. Such cases can significantly impact personal rights, employment, business interests, or public policy. </p>
+    <p class="text-[16px] leading-[1.95] text-[#334155] mt-2"> At 
             <strong>Legalx24</strong>, we assist clients in matters involving government departments, statutory bodies, public sector organizations, and regulatory authorities. Our approach focuses on ensuring that administrative actions remain lawful, fair, and within the limits of constitutional authority. </p>
          <p class="text-[16px] leading-[1.95] text-[#334155] mt-2"> We provide both advisory and litigation support in constitutional remedies, service law disputes, public interest matters, and enforcement of legal and fundamental rights before appropriate courts and forums. </p>
       </div>

@@ -10,7 +10,7 @@
    <section class="bg-white px-5 py-[60px]"> 
       <div class="container mx-auto">
          <h2 class="text-[clamp(26px,3vw,36px)] font-extrabold text-slate-950 mb-3 after:content-[&#39;&#39;] after:block after:w-[70px] after:h-1 after:bg-violet-600 after:mt-2"> Introduction to DRT &amp; SARFAESI Laws </h2>
-         <p class="text-[16px] text-slate-600 leading-[1.9] mb-3"> The Indian banking system relies on structured recovery laws to address loan defaults and non-performing assets. DRT and the SARFAESI Act together form the backbone of institutional loan recovery, reducing dependence on lengthy civil litigation. </p>
+       <p class="text-[16px] text-slate-600 leading-[1.9] mb-3"> The Indian banking system relies on structured recovery laws to address loan defaults and non-performing assets. DRT and the SARFAESI Act together form the backbone of institutional loan recovery, reducing dependence on lengthy civil litigation. </p>
          <p class="text-slate-600 leading-[1.9]"> These laws are designed to protect public money, strengthen lender confidence, and ensure timely enforcement of repayment obligations while safeguarding borrower rights. </p>
       </div> </section> 
    <section class="bg-slate-50 px-5 py-[60px]"> 

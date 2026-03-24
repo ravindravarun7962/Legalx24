@@ -17,7 +17,7 @@
          </div>
       </div>
       <div class="bg-white p-[40px] rounded-[22px] shadow-[0_18px_45px_rgba(0,0,0,0.08)] mb-10">
-         <p class="text-[16px] leading-[1.95] text-[#333]"> Tax and financial regulations in India are detailed and frequently updated. Non-compliance, incorrect filings, or delayed responses to notices can lead to penalties, investigations, or prolonged litigation. </p>
+                <p class="text-[16px] leading-[1.95] text-[#333]"> Tax and financial regulations in India are detailed and frequently updated. Non-compliance, incorrect filings, or delayed responses to notices can lead to penalties, investigations, or prolonged litigation. </p>
          <p class="text-[16px] leading-[1.95] text-[#333] mt-2"> At 
             <strong>Legalx24</strong>, we provide complete legal support in taxation and financial law matters, including advisory, compliance review, representation before authorities, and court litigation. Our approach is practical — identify risks early, respond correctly, and resolve disputes efficiently. </p>
          <p class="text-[16px] leading-[1.95] text-[#333] mt-2"> Whether you are dealing with income tax scrutiny, GST notices, allegations of financial irregularities, or proceedings under FEMA or Benami laws, our team offers clear legal guidance and structured representation suited to your case. </p>

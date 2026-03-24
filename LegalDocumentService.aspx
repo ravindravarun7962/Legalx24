@@ -17,8 +17,8 @@
          </div>
       </div> 
       <div class="bg-white p-10 rounded-2xl shadow-lg mb-12">
-         <p class="text-slate-700 leading-relaxed mb-4"> Legal documents are more than paperwork — they define what each party can do, what they are responsible for, and how issues will be handled if something goes wrong. When documents are vague or copied from generic formats, they often fail at the time they’re actually needed. </p>
-         <p class="text-slate-700 leading-relaxed mb-4"> That’s why proper drafting matters. A well-prepared document reduces misunderstandings, protects your interests, and helps avoid costly disputes. </p>
+              <p class="text-slate-700 leading-relaxed mb-4"> Legal documents are more than paperwork — they define what each party can do, what they are responsible for, and how issues will be handled if something goes wrong. When documents are vague or copied from generic formats, they often fail at the time they’re actually needed. </p>
+    <p class="text-slate-700 leading-relaxed mb-4"> That’s why proper drafting matters. A well-prepared document reduces misunderstandings, protects your interests, and helps avoid costly disputes. </p>
          <p class="text-slate-700 leading-relaxed"> At 
             <strong>Legalx24</strong>, we focus on preparing documents that match your specific purpose, comply with applicable laws, and remain clear enough for everyone involved to understand. </p>
       </div> 

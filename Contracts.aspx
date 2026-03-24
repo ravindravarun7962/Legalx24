@@ -19,7 +19,7 @@
       </div> </section><section class="px-5 py-[60px] bg-gray-100">
       <div class="container mx-auto">
          <h2 class="font-extrabold text-[clamp(26px,3vw,34px)] text-gray-900 mb-3 after:block after:w-[65px] after:h-[3px] after:bg-purple-600 after:mt-1"> Types of Agreements </h2>
-         <p class="text-[16px] leading-8 text-gray-600 mb-2"> Businesses and individuals may require various agreements including partnership agreements, shareholder agreements, employment contracts, non-disclosure agreements (NDA), service agreements, vendor contracts, franchise agreements, lease agreements, and technology licensing contracts. </p>
+       <p class="text-[16px] leading-8 text-gray-600 mb-2"> Businesses and individuals may require various agreements including partnership agreements, shareholder agreements, employment contracts, non-disclosure agreements (NDA), service agreements, vendor contracts, franchise agreements, lease agreements, and technology licensing contracts. </p>
          <p class="text-[16px] leading-8 text-gray-600 mb-4"> Each agreement must be customized based on the nature of the transaction and applicable legal framework. </p>
          <div class="bg-white border-l-[6px] border-purple-600 p-6 rounded-[10px] shadow-lg my-6 font-semibold"> Tailored drafting prevents loopholes and minimizes future litigation risks. </div>
       </div> </section><section class="px-5 py-[60px] bg-white">
